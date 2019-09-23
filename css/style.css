@@ -17,11 +17,6 @@ body {
     margin:auto;
     background-color: #785964;
   }
-  footer{
-  color: white;
-  background-color: #785964; 
-  padding: 2em
-  }
   a:hover
 { color:black; }
 a:link
@@ -29,6 +24,10 @@ a:link
 a:visited
 { color: black; }
 .selfie {
-    float: right;
-    top: 100px
+    grid-column: 2;
+
+}
+home-grid{
+    display: grid;
+    grid-template-columns: repeat(2, ) ;
 }
