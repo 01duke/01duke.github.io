@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 0;
+    color: #444;
+  }
+  h1 {
+    font-family: "Merriweather", serif;
+    font-size: 30px;
+    background-color:#d5c7bc;
+  }
+  html {
+    min-width:100px;
+    max-width: 1000px;
+    margin:auto;
+    background-color: #785964;
+  }
+a:hover
+{ color:black; }
+a:link
+{ color: black; }
+a:visited
+{ color: black; }
+.selfie {
+    grid-column: 3; 
+    grid-row: 1;
+
+}
+home-grid{
+    display: grid;
+    grid-template-columns: repeat(2, ) ;
+}
+.assignment-list{
+    grid-column: 2;
+    grid-row: 1;
+}
