@@ -28,7 +28,7 @@ a:visited
     grid-row: 1;
 
 }
-home-grid{
+.home-grid{
     display: grid;
     grid-template-columns: repeat(2, ) ;
 }
