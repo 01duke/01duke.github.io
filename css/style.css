@@ -24,7 +24,8 @@ a:link
 a:visited
 { color: black; }
 .selfie {
-    grid-column: 3;
+    grid-column: 3; 
+    grid-row: 1;
 
 }
 home-grid{
@@ -32,5 +33,6 @@ home-grid{
     grid-template-columns: repeat(2, ) ;
 }
 .assignment-list{
-    grid-column: 1
+    grid-column: 2;
+    grid-row: 1im so;
 }
