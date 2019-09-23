@@ -6,10 +6,6 @@ body {
     margin: 0;
     color: #444;
   }
-  header {
-    padding:1em;
-    background-color: #454545;
-    }
   h1 {
     font-family: "Merriweather", serif;
     font-size: 30px;
@@ -23,7 +19,7 @@ body {
   }
   footer{
   color: white;
-  background-color: #454545; 
+  background-color: #785964; 
   padding: 2em
   }
   a:hover
@@ -33,5 +29,5 @@ a:link
 a:visited
 { color: black; }
 .selfie {
-    float: left;
+    float: right;
 }
