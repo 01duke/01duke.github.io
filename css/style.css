@@ -17,17 +17,20 @@ body {
     margin:auto;
     background-color: #785964;
   }
-  a:hover
+a:hover
 { color:black; }
 a:link
 { color: black; }
 a:visited
 { color: black; }
 .selfie {
-    grid-column: 2;
+    grid-column: 3;
 
 }
 home-grid{
     display: grid;
     grid-template-columns: repeat(2, ) ;
+}
+.assignment-list{
+    grid-column: 1
 }
