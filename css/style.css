@@ -30,4 +30,5 @@ a:visited
 { color: black; }
 .selfie {
     float: right;
+    top: 100px
 }
