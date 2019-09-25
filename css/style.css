@@ -11,12 +11,16 @@ body {
     font-family: "Merriweather", serif;
     font-size: 40px;
     background-color:#d5c7bc;
+    
   }
   html {
     min-width:100px;
     max-width: 1000px;
     margin:auto;
     background-color: #785964;
+  }
+  header {
+    margin: auto
   }
 a:hover
 { color:black; }
