@@ -1,49 +1,7 @@
-/* font-family: 'Roboto', sans-serif;*/
-body {
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    padding: 5px 25px;
-    font-size: 18px;
-    margin: 0;
-    color: #444;
+@media screen and (max-width: 33.5rem){
+  .selfie {
+    grid-column: 1;
+    grid-row: 2;
+    float: right;
   }
-  h1 {
-    font-family: "Merriweather", serif;
-    font-size: 40px;
-    background-color:#d5c7bc;
-    
-  }
-  html {
-    min-width:100px;
-    max-width: 1000px;
-    margin:auto;
-    background-color: #785964;
-    box-sizing:border-box;
-  }
-  header {
-    width: 300px;
-    margin: auto;
-  }
-a:hover
-{ color:black; }
-a:link
-{ color: black; }
-a:visited
-{ color: black; }
-.selfie {
-  grid-column: 1;
-  grid-row: 2;
-  float: right;
-}
-.home-grid{
-    display: grid;
-    grid-template-columns: repeat(1) ;
-    grid-template-rows: repeat(2);
-}
-.assignment-list{
-    grid-column: 2;
-    grid-row: 1;
-}
-footer{
-  padding: 1em 
 }
