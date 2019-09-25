@@ -33,6 +33,7 @@ a:visited
     grid-column: 3; 
     grid-row: 1;
     float: right;
+    clear: bottom
 }
 .home-grid{
     display: grid;
