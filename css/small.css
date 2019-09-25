@@ -32,6 +32,8 @@ a:visited
 .selfie {
     grid-column: 3; 
     grid-row: 1;
+    float: right;
+    clear: right;
 
 }
 .home-grid{
