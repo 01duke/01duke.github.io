@@ -10,8 +10,7 @@ body {
   h1 {
     font-family: "Merriweather", serif;
     font-size: 40px;
-    background-color:#d5c7bc;
-    
+    background-color:#d5c7bc; 
   }
   html {
     min-width:100px;
@@ -21,6 +20,7 @@ body {
     box-sizing:border-box;
   }
   header {
+    width: 300px;
     margin: auto;
   }
 a:hover
@@ -32,7 +32,7 @@ a:visited
 .selfie {
     grid-column: 3; 
     grid-row: 1;
-
+    float: right;
 }
 .home-grid{
     display: grid;

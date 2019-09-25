@@ -21,6 +21,7 @@ body {
     box-sizing:border-box;
   }
   header {
+    width: 300px;
     margin: auto;
   }
 a:hover
@@ -30,15 +31,14 @@ a:link
 a:visited
 { color: black; }
 .selfie {
-    grid-column: 3; 
-    grid-row: 1;
-    float: right;
-    clear: right;
-
+  grid-column: 1;
+  grid-row: 2;
+  float: right;
 }
 .home-grid{
     display: grid;
-    grid-template-columns: repeat(2, ) ;
+    grid-template-columns: repeat(1) ;
+    grid-template-rows: repeat(2);
 }
 .assignment-list{
     grid-column: 2;
