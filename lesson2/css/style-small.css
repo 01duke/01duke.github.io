@@ -1,4 +1,5 @@
 /* font-family: 'Roboto', sans-serif;*/
+@import "/css/normalize.css";
 body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
