@@ -1,0 +1,7 @@
+@media screen and (min-width: 720px){
+    .selfie {
+      grid-column: 1;
+      grid-row: 2;
+      float: right;
+    }
+  } 

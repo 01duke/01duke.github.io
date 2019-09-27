@@ -1,4 +1,4 @@
-@media screen and (max-width: 33.5rem){
+@media screen and (min-width: 461px){
   .selfie {
     grid-column: 1;
     grid-row: 2;
