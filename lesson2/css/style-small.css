@@ -23,6 +23,7 @@ body {
   header {
     width: 300px;
     margin: auto;
+    text-align:center;
   }
 a:hover
 { color:black; }
@@ -30,6 +31,13 @@ a:link
 { color: black; }
 a:visited
 { color: black; }
+nav ul {
+  margin: 0;
+  text-align:center;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr)); 
+}
 .selfie {
     grid-column: 3; 
     grid-row: 1;

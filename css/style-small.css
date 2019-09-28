@@ -11,6 +11,7 @@ body {
     font-family: "Merriweather", serif;
     font-size: 40px;
     background-color:#d5c7bc; 
+    text-align:center;
   }
   html {
     min-width:100px;
@@ -22,6 +23,7 @@ body {
   header {
     width: 300px;
     margin: auto;
+    text-align:center;
   }
 a:hover
 { color:black; }
@@ -29,11 +31,16 @@ a:link
 { color: black; }
 a:visited
 { color: black; }
+nav ul {
+  margin: 0;
+  text-align:center;
+  display: grid;
+}
 .selfie {
     grid-column: 3; 
     grid-row: 1;
     float: right;
-    clear: bottom
+    clear: bottom;
 }
 .home-grid{
     display: grid;
@@ -44,5 +51,5 @@ a:visited
     grid-row: 1;
 }
 footer{
-  padding: 1em 
+  padding: 1em;
 }
