@@ -19,7 +19,7 @@ body {
     min-width:100px;
     max-width: 1400px;
     margin:auto;
-    background-color: #722929;
+    background-color: white;
     box-sizing:border-box;
   }
   header {
@@ -33,6 +33,13 @@ a:link
 { color: black; }
 a:visited
 { color: black; }
+.main-container {
+  max-width: 767px;
+  margin: 1.3em auto 1.3em auto;
+  padding: 1.2em;
+  border-radius: 1em;
+  background-color: #e0e0e0;
+}
 nav ul {
   margin: 0;
   text-align:center;
@@ -50,6 +57,7 @@ main{
   max-width: 70px;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr ;
   font-size: 1rem;
 }
 main section{
@@ -57,3 +65,13 @@ padding: 5px;
 margin: auto;
  
 }
+.cloumn1{
+  grid-row: 2;
+}
+.cloumn2{
+  grid-row: 3;
+}
+.cloumn2{
+  grid-row: 4;
+}
+

@@ -1,5 +1,8 @@
 @media only screen and (min-width: 720px){
   main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-  } 
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+.whitespace {
+  margin: auto
+}
+} 
