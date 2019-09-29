@@ -1,7 +1,8 @@
-@media only screen and (min-width: 461px){
-  .selfie {
-    grid-column: 1;
-    grid-row: 2;
-    float: right;
+@media only screen and (min-width: 460px){
+  main {
+		grid-template-columns: 1fr 1fr;
+  }
+  .column3{
+    grid-template-columns: repeat(2, ) ;
   }
 } 

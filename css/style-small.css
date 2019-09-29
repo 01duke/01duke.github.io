@@ -1,11 +1,12 @@
-/* font-family: 'Roboto', sans-serif;*/
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import "/css/normalize.css";
 body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
     padding: 5px 25px;
     font-size: 18px;
     margin: 0;
-    color: #444;
+    color: rgb(46, 46, 46);
   }
   h1 {
     font-family: "Merriweather", serif;
@@ -17,7 +18,7 @@ body {
     min-width:100px;
     max-width: 1000px;
     margin:auto;
-    background-color: #785964;
+    background-color: #722929;
     box-sizing:border-box;
   }
   header {
@@ -35,6 +36,7 @@ nav ul {
   margin: 0;
   text-align:center;
   display: grid;
+  list-style-type: none;
 }
 .selfie {
     grid-column: 3; 

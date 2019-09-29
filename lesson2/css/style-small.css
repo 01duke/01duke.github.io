@@ -1,4 +1,4 @@
-/* font-family: 'Roboto', sans-serif;*/
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import "/css/normalize.css";
 body {
     background-color: white;
@@ -6,22 +6,24 @@ body {
     padding: 5px 25px;
     font-size: 18px;
     margin: 0;
-    color: #444;
+    color: rgb(46, 45, 45);
   }
   h1 {
     font-family: "Merriweather", serif;
     font-size: 40px;
     background-color:#d5c7bc; 
+    text-align:center;
+    margin: 1em 1em 1em 0em;
   }
   html {
     min-width:100px;
-    max-width: 1000px;
+    max-width: 1400px;
     margin:auto;
-    background-color: #785964;
+    background-color: #722929;
     box-sizing:border-box;
   }
   header {
-    width: 300px;
+    width: 150px;
     margin: auto;
     text-align:center;
   }
@@ -36,22 +38,22 @@ nav ul {
   text-align:center;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr)); 
-}
-.selfie {
-    grid-column: 3; 
-    grid-row: 1;
-    float: right;
-    clear: bottom
 }
 .home-grid{
     display: grid;
     grid-template-columns: repeat(2, ) ;
 }
-.assignment-list{
-    grid-column: 2;
-    grid-row: 1;
-}
 footer{
   padding: 1em 
+}
+main{
+  max-width: 70px;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1rem;
+}
+main section{
+padding: 5px;
+margin: auto;
+ 
 }
