@@ -1,4 +1,4 @@
-@media only screen and (min-width: 460px){
+@media only screen and (min-width: 800px){
   main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -10,4 +10,5 @@
 .whitespace {
   margin: auto
 }
+
 } 

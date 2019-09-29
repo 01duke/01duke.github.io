@@ -1,8 +1,20 @@
-@media only screen and (min-width: 720px){
+@media only screen and (min-width: 1000px){
+  html{
+    background-color: #722929;
+  }
   main {
     grid-template-columns: 1fr 1fr 1fr;
   }
 .whitespace {
   margin: auto
+}
+.cloumn1{
+  grid-column: 1;
+}
+.cloumn2{
+  grid-column: 2;
+}
+.cloumn2{
+  grid-column: 3;
 }
 } 
