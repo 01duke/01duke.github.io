@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import "/css/normalize.css";
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 25px;
+    font-size: 18px;
+    margin: 0;
+    color: rgb(46, 46, 46);
+  }
+  h1 {
+    font-family: "Merriweather", serif;
+    font-size: 40px;
+    background-color:#d5c7bc; 
+    text-align:center;
+  }
+  html {
+    min-width:100px;
+    max-width: 1000px;
+    margin:auto;
+    background-color: #722929;
+    box-sizing:border-box;
+  }
+  header {
+    width: 300px;
+    margin: auto;
+    text-align:center;
+  }
+a:hover
+{ color:black; }
+a:link
+{ color: black; }
+a:visited
+{ color: black; }
+nav ul {
+  margin: 0;
+  text-align:center;
+  display: grid;
+  list-style-type: none;
+}
+.selfie {
+    grid-column: 3; 
+    grid-row: 1;
+    float: right;
+    clear: bottom;
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(2, ) ;
+}
+.assignment-list{
+    grid-column: 2;
+    grid-row: 1;
+}
+footer{
+  padding: 1em;
+}
