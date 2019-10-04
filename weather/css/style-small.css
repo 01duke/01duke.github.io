@@ -1,37 +1,51 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import "/css/normalize.css";
+/*
+*.color-primary { color: #074D7E }
+*.color-secondary{ color: #FFD763 }
+*
+*
+*/
 body {
-    background-color: white;
+    background-color: #110e0e;
     font-family: 'Roboto', sans-serif;
     padding: 5px 25px;
     font-size: 18px;
     margin: 0;
-    color: rgb(46, 46, 46);
+    color: #074D7E;
   }
   h1 {
     font-family: "Merriweather", serif;
     font-size: 40px;
-    background-color:#d5c7bc; 
+    color:#131689 ; 
+    text-align:center;
+  }
+  h2 {
+    font-family: "Merriweather", serif;
+    font-size: 30px;
+    color: #131689 ; 
     text-align:center;
   }
   html {
     min-width:100px;
     max-width: 1000px;
     margin:auto;
-    background-color: #722929;
+    background-color: #FFD763;
     box-sizing:border-box;
+    padding: .5em;
   }
   header {
-    width: 300px;
+    color: #074D7E;
+    width: auto;
     margin: auto;
     text-align:center;
   }
 a:hover
-{ color:black; }
+{ color:#FFD763; }
 a:link
-{ color: black; }
+{ color:#FFD763; }
 a:visited
-{ color: black; }
+{ color: #FFD763; }
 nav ul {
   margin: 0;
   text-align:center;
@@ -46,12 +60,15 @@ nav ul {
 }
 .home-grid{
     display: grid;
-    grid-template-columns: repeat(2, ) ;
+    grid-template-columns: repeat 2 ;
 }
 .assignment-list{
     grid-column: 2;
     grid-row: 1;
 }
 footer{
+  color: #074D7E;
   padding: 1em;
+  margin: 0;
+  text-align: center;
 }

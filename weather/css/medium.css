@@ -1,7 +1,9 @@
 @media screen and (min-width: 460px){
-  .selfie {
-    grid-column: 1;
-    grid-row: 2;
-    float: right;
+  header {
+    color: #074D7E;
+    font-size: 50px;
+    width: auto;
+    margin: auto;
+    text-align:center;
   }
 } 
