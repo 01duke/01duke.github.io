@@ -2,8 +2,8 @@
 @import "/css/normalize.css";
 /*
 *.color-primary { color: #074D7E }
-*.color-secondary{ color: #FFD763 }
-*
+*.color-secondary 1 { color: #FFD763 }
+*.color-secondary 2 { color: #131689 }
 *
 */
 body {
@@ -28,7 +28,7 @@ body {
   }
   html {
     min-width:100px;
-    max-width: 1000px;
+    max-width: 1075px;
     margin:auto;
     background-color: #FFD763;
     box-sizing:border-box;
@@ -36,12 +36,18 @@ body {
   }
   header {
     color: #074D7E;
+    font-size: 2em;
     width: auto;
     margin: auto;
     text-align:center;
   }
-a:hover
-{ color:#FFD763; }
+  nav a:hover {
+    background-color: #074D7E;
+    color: #FFD763;
+  }
+  .active {
+    color: #131689;
+  }
 a:link
 { color:#FFD763; }
 a:visited
@@ -51,18 +57,20 @@ nav ul {
   text-align:center;
   display: grid;
   list-style-type: none;
+  box-shadow: 0 2px 15px ;
 }
-.selfie {
-    grid-column: 3; 
-    grid-row: 1;
-    float: right;
-    clear: bottom;
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
 }
-.home-grid{
+.main-container{
     display: grid;
     grid-template-columns: repeat 2 ;
 }
-.assignment-list{
+.colmun1{
     grid-column: 2;
     grid-row: 1;
 }
