@@ -80,3 +80,10 @@ footer{
   margin: 0;
   text-align: center;
 }
+.icon{
+  margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
