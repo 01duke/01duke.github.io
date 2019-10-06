@@ -14,13 +14,7 @@ body {
     margin: 0;
     color: rgb(28, 88, 132);
   }
-  h1 {
-    font-family: "Merriweather", serif;
-    font-size: 40px;
-    color:#131689 ; 
-    text-align:center;
-  }
-  h2 {
+  h1 h2 h3 h4 h5 h6 {
     font-family: "Merriweather", serif;
     font-size: 30px;
     color: #131689 ; 
@@ -30,7 +24,7 @@ body {
     min-width:100px;
     max-width: 1075px;
     margin:auto;
-    background-color: #FFD763;
+    background-color: #001f54;
     box-sizing:border-box;
     padding: .5em;
   }
@@ -86,4 +80,21 @@ footer{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+.primary {
+  background-color: #001f54;
+  color: white;
+}
+
+.secondary {
+  background-color: #FFD763;
+  color: white;
+}
+
+.accent1 {
+  background-color: #131689;
+  color: white;
+}
+.colors{
+  margin: auto;
 }
