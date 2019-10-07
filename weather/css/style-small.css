@@ -62,7 +62,7 @@ nav li a {
 }
 .main-container{
     display: grid;
-    grid-template-columns: repeat 2 ;
+    grid-template-columns: 1fr ;
 }
 .colmun1{
     grid-column: 2;
