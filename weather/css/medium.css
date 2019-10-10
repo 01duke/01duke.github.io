@@ -1,9 +1,20 @@
 @media screen and (min-width: 32.5rem){
+  nav ul{
+    display:flex ;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+  }
   header {
     color: #074D7E;
     font-size: 50px;
     width: auto;
     margin: auto;
     text-align:center;
+  }
+  .icon{
+    float: left;
+    border-radius: 50%;
+    width: 10vw;
   }
 } 

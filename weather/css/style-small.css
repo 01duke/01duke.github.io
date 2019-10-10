@@ -29,6 +29,7 @@ body {
     padding: .5em;
   }
   header {
+    background-color: #00bbfa;
     color: #1C5884;
     font-size: 2em;
     width: auto;
@@ -36,11 +37,14 @@ body {
     text-align:center;
   }
   nav a:hover {
+    border-radius: 50%;
     background-color: #1C5884;
     color: #FFD763;
   }
 .active {
 background-color: #131689;
+border-radius: 50%;
+
   }
 a:link
 { color:#FFD763; }
@@ -98,3 +102,12 @@ footer{
 .colors{
   margin: auto;
 }
+.icon{
+  border-radius: 50%;
+  width: 10vm;
+}
+/*#nav a [title~=plan],
+#nav a [title~=plan],
+#nav a [title~=plan],
+#nav a [title~=plan] 
+ background-color: <-color->;*/
