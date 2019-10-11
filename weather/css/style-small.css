@@ -14,12 +14,12 @@ body {
     padding: 5px 25px;
     font-size: 18px;
     margin: 0;
-    color: #1C5884;
+    color: #67a6d3;
   }
   h1 h2 h3 h4 h5 h6 {
     font-family: "Merriweather", serif;
     font-size: 30px;
-    color: #1C5884 ; 
+    color: #67a6d3 ; 
     text-align:center;
   }
   html {
@@ -43,7 +43,7 @@ body {
   }
   nav a:hover {
     border-radius: 30px;
-    background-color: #1C5884;
+    background-color: #67a6d3;
     color: #FFD763;
   }
 .active {
@@ -78,7 +78,7 @@ nav li a {
     grid-row: 1;
 }
 footer{
-  color:#1C5884;
+  color:#67a6d3;
   padding: 1em;
   margin: 0;
   text-align: center;
@@ -91,7 +91,7 @@ footer{
   width: 50%;
 }
 .primary {
-  background-color: #1C5884;
+  background-color: #67a6d3;
   color: white;
 }
 
