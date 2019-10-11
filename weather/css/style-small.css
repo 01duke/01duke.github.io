@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
 @import "/css/normalize.css";
+
 /*
 *.color-primary { color: #074D7E }
 *.color-secondary 1 { color: #FFD763 }
@@ -29,21 +31,24 @@ body {
     padding: .5em;
   }
   header {
+    font-family: 'Slabo 27px', serif;
     background-color: #00bbfa;
-    color: #1C5884;
+    color: #110e0e;
     font-size: 2em;
+    padding: 0.3em;
     width: auto;
     margin: auto;
     text-align:center;
+    border-radius: 30px;
   }
   nav a:hover {
-    border-radius: 50%;
+    border-radius: 30px;
     background-color: #1C5884;
     color: #FFD763;
   }
 .active {
 background-color: #131689;
-border-radius: 50%;
+border-radius: 30px;
 
   }
 a:link
