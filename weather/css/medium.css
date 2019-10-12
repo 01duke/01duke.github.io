@@ -1,10 +1,4 @@
 @media screen and (min-width: 32.5rem){
-  nav ul{
-    display:flex ;
-    margin: 0;
-    padding: 0;
-    justify-content: space-evenly;
-  }
   header {
     color: #110e0e;
     font-size: 45px;
@@ -12,15 +6,24 @@
     margin: auto;
     text-align:center;
   }
-  	.r-nav {
+/* Media Query for medium + screens */
+
+	.navigation {
 		display: flex;
 	}
-	.r-nav li:first-child {
+	.navigation li:first-child {
 		display: none;
 	}
-	.r-nav li {
+	.navigation li {
 		display: block;
 		flex: 1 1 100%;
 	}
+	.navigation li a {
+		color: 67a6d3;
+  }
+  .active {
+    background-color: #001f54;
+    border-radius: 20px;
 
+  }
 } 

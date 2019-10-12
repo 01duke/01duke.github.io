@@ -12,4 +12,15 @@
     margin: auto;
     text-align:center;
   }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   } 
+  .active {
+    background-color: #001f54;
+    border-radius: 20px;
+}
+}
