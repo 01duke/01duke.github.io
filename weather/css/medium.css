@@ -12,9 +12,15 @@
     margin: auto;
     text-align:center;
   }
-  .icon{
-    float: left;
-    border-radius: 50%;
-    width: 10vw;
-  }
+  	.r-nav {
+		display: flex;
+	}
+	.r-nav li:first-child {
+		display: none;
+	}
+	.r-nav li {
+		display: block;
+		flex: 1 1 100%;
+	}
+
 } 
