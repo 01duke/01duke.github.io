@@ -83,7 +83,7 @@ footer{
 /* interactive menu*/
 nav {
 	margin: 0;
-	max-width: 760px;
+	width: 100%;
     background-color: #110e0e;
     bottom: 0;
     position: absolute;

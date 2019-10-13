@@ -1,10 +1,27 @@
 @media screen and (min-width: 32.5rem){
-  header {
+   
+  .title{
     color: #110e0e;
     font-size: 45px;
     width: auto;
     margin: auto;
     text-align:center;
+  }
+  .tagline{
+    font-style: italic;
+    
+   }
+   header .icon{
+     float: right;
+     max-width: 130px;
+   }
+   nav {
+    margin: 0;
+    max-width: 760px;
+      background-color: #110e0e;
+      position: absolute;
+      width: 100%;
+      border-radius: 30px;
   }
 /* Media Query for medium + screens */
 
@@ -19,7 +36,7 @@
 		flex: 1 1 100%;
 	}
 	.navigation li a {
-		color: 67a6d3;
+		color: #67a6d3;
   }
   .active {
     background-color: #001f54;
