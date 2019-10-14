@@ -1,11 +1,6 @@
 @media screen and (min-width: 60rem){
-  nav ul {
-    display:flex ;
-    margin: 0;
-    padding: 0;
-    justify-content: space-evenly;
-  }
-  header {
+
+  title {
     color: #110e0e;
     font-size: 50px;
     width: auto;

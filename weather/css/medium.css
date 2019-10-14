@@ -1,17 +1,38 @@
 @media screen and (min-width: 32.5rem){
-  header {
+   
+  .title{
     color: #110e0e;
     font-size: 45px;
     width: auto;
     margin: auto;
     text-align:center;
   }
+<<<<<<< HEAD
   nav {
     margin: 0;
     max-width: 760px;
       background-color: #110e0e;
       position: relative;
   }
+=======
+  .tagline{
+    font-style: italic;
+    
+   }
+   header .icon{
+     float: right;
+     max-width: 130px;
+   }
+   nav {
+    margin: 0;
+    max-width: 760px;
+      background-color: #110e0e;
+      position: absolute;
+      width: 100%;
+      border-radius: 30px;
+  }
+/* Media Query for medium + screens */
+>>>>>>> c7ba0657b4c15dd72857d9c7e27928f9880699e9
 
 	.navigation {
 		display: flex;
@@ -24,7 +45,7 @@
 		flex: 1 1 100%;
 	}
 	.navigation li a {
-		color: 67a6d3;
+		color: #67a6d3;
   }
   .active {
     background-color: #001f54;
