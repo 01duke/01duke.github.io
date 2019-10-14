@@ -6,7 +6,12 @@
     margin: auto;
     text-align:center;
   }
-/* Media Query for medium + screens */
+  nav {
+    margin: 0;
+    max-width: 760px;
+      background-color: #110e0e;
+      position: relative;
+  }
 
 	.navigation {
 		display: flex;
