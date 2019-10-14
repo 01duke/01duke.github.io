@@ -54,7 +54,7 @@ body {
   }
 .icon{
       float: left;
-      width: 25vw;
+      width: 50px;
   }
   nav a:hover {
     border-radius: 20px;

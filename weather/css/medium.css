@@ -16,7 +16,9 @@
       background-color: #110e0e;
       position: relative;
   }
-
+  .icon{
+  width: 100px;
+  }
 	.navigation {
 		display: flex;
 	}
