@@ -117,6 +117,18 @@ nav {
 .responsive li {
 	display: block;
 }
+.weather-active{
+  
+}
+.conditions{
+
+}
+.precipitation{
+
+}
+.temp{
+
+}
 
 /*#nav a [title~=plan],
 #nav a [title~=plan],
