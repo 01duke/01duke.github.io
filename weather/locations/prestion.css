@@ -117,18 +117,49 @@ nav {
 .responsive li {
 	display: block;
 }
-.weather-active{
-  
+/*.weather-active{
+  background: radial-gradient(circle, transparent 40%, gray 40%);
+  border-radius: 100%;
+  height: 170px;
+  width: 170px;
+}*/
+#conditions-cir{
+  background: radial-gradient(circle, transparent 40%, gray 40%);
+  border-radius: 100%;
+  height: 170px;
+  width: 170px;
 }
-.conditions{
+#conditions-dot{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #00bbfa;
+}
+#precipitation-cir{
+  background: radial-gradient(circle, transparent 40%, gray 40%);
+  border-radius: 100%;
+  height: 170px;
+  width: 170px;
+}
+#precipitation-dot{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #00bbfa;
+}
+#temp-cir{
+  background: radial-gradient(circle, transparent 40%, gray 40%);
+  border-radius: 100%;
+  height: 170px;
+  width: 170px;
+}
+#temp-dot{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #00bbfa;
+}
 
-}
-.precipitation{
-
-}
-.temp{
-
-}
 
 /*#nav a [title~=plan],
 #nav a [title~=plan],
