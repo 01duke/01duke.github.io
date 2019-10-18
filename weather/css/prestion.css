@@ -82,13 +82,15 @@ footer{
 }
 /* interactive menu*/
 nav {
-	margin: 0;
-	width: 100%;
-    background-color: #110e0e;
-    bottom: 0;
-    position: absolute; bottom: auto;
-    width: 100%;
-    border-radius: 30px;
+  margin: 0;
+  margin-top: -2.5em;	
+  width: 100%;
+  margin-top: -2.5em;
+  background-color: #110e0e;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  border-radius: 30px;
 }
 .navigation {
 	list-style: none;
@@ -138,7 +140,7 @@ nav {
   width: 35px;
   height: 35px;
   border-radius: 100%;
-  background-color: orangered;
+  background-color: #00bbfa;
 }
 /*weather clocks*/
 .weather-clock{
@@ -154,28 +156,28 @@ nav {
   font-size: 36px;
 }
 
-.o1 {position: absolute; top: 13px; left: 114px;}
-.o2 {position: absolute; top: 38px; left: 136px;}
-.o3 {position: absolute; top: 72px; left: 145px;}
-.o4 {position: absolute; top: 105px; left: 134px;}
-.o5 {position: absolute; top: 128px; left: 110px;}
-.o6 {position: absolute; top: 136px; left: 77px;}
-.o7 {position: absolute; top: 128px; left: 44px;}
+.o1 {position: absolute; top: 15px; left: 115px;}
+.o2 {position: absolute; top: 40px; left: 130px;}
+.o3 {position: absolute; top: 75px; left: 145px;}
+.o4 {position: absolute; top: 105px; left: 135px;}
+.o5 {position: absolute; top: 130px; left: 110px;}
+.o6 {position: absolute; top: 130px; left: 70px;}
+.o7 {position: absolute; top: 130px; left: 44px;}
 .o8 {position: absolute; top: 105px; left: 20px;}
-.o9 {position: absolute; top: 72px; left: 12px;}
-.o10 {position: absolute; top: 38px; left: 11px;}
-.o11 {position: absolute; top: 13px; left: 34px;}
+.o9 {position: absolute; top: 75px; left: 15px;}
+.o10 {position: absolute; top: 40px; left: 10px;}
+.o11 {position: absolute; top: 15px; left: 35px;}
 .o12 {position: absolute; top: 5px; left: 70px; }
-.i1 {position: absolute; top: -20px; left: 130px;}
-.i2 {position: absolute; top: 15px; left: 168px;}
-.i3 {position: absolute; top: 72px; left: 182px;}
-.i4 {position: absolute; top: 120px; left: 168px;}
+.i1 {position: absolute; top: -30px; left: 130px;}
+.i2 {position: absolute; top: 15px; left: 170px;}
+.i3 {position: absolute; top: 75px; left: 180px;}
+.i4 {position: absolute; top: 120px; left: 170px;}
 .i5 {position: absolute; top: 160px; left: 130px;}
 .i6 {position: absolute; top: 175px; left: 70px;}
 .i7 {position: absolute; top: 160px; left: 10px;}
-.i8 {position: absolute; top: 120px; left: -28px;}
-.i9 {position: absolute; top: 72px; left: -40px;}
-.i10 {position: absolute; top: 15px; left: -28px;}
+.i8 {position: absolute; top: 120px; left: -30px;}
+.i9 {position: absolute; top: 75px; left: -40px;}
+.i10 {position: absolute; top: 15px; left: -30px;}
 .i11 {position: absolute; top: -20px; left: 10px;}
 .i12 {position: absolute; top: -35px; left: 70px;}
 /*#nav a [title~=plan],
