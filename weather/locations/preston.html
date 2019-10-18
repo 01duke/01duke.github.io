@@ -1,75 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Weather Channel</title>
-    <link type="text/css" rel="stylesheet" href="/weather/css/prestion.css" media="screen">
-    <link type="text/css" rel="stylesheet" href="/weather/css/medium.css" media="screen and (min-width: 32.5rem)">
-    <link type="text/css" rel="stylesheet" href="/weather/css/large.css" media="screen and (min-width: 60rem)">
-    <script src="/weather/javascript/responsive.js" async></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Weather Channel</title>
+  <link type="text/css" rel="stylesheet" href="/weather/css/prestion.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="/weather/css/medium.css" media="screen and (min-width: 32.5rem)">
+  <link type="text/css" rel="stylesheet" href="/weather/css/large.css" media="screen and (min-width: 60rem)">
+  <script src="/weather/javascript/responsive.js" async></script>
 </head>
 <main>
-<div class="main-container">
-    <header><div class="title">Duke's Weather</div>
-    <p class="tagline">Can't run from the weather.</p>
-    <img class="icon" src="/weather/images/weather_channel_icon.png" alt="wireless radio icon ">
+  <div class="main-container">
+    <header>
+      <div class="title">Duke's Weather</div>
+      <p class="tagline">Can't run from the weather.</p>
+      <img class="icon" src="/weather/images/weather_channel_icon.png" alt="wireless radio icon ">
     </header>
     <nav>
-        <ul class= "navigation">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href= "/index.html"> Home </a></li>
-            <li><a href= "preston.html" class = "active"> Preston </a></li>
-            <li><a href="#"> Soda Springs </a></li>
-        </ul>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="/index.html"> Home </a></li>
+        <li><a href="preston.html" class="active"> Preston </a></li>
+        <li><a href="#"> Soda Springs </a></li>
+        <li><a href="#"> Fish Haven </a></li>
+        <li><a href="#"> Storm Center </a></li>
+        <li><a href="#"> Gallery </a></li>
+      </ul>
     </nav>
-</div>
-</main>  
+  </div>
+</main>
 <h1>Preston, ID</h1>
 <p>42.0963° N, 111.8766° W</p>
-<h2>Current Conditions</h2>
-<p>conditions go here</p>
-<div class="weather-clock">
-<h3>Conditions</h3>
+<ul class="current-weather">
+  <li id="current">50&nbsp;&deg;F</li>
+  <li id="hot">58&nbsp;&deg;F</li>
+  <li id="cold">40&nbsp;&deg;F</li>
+  <li>10 mph wind</li>
+</ul>
+<div class="clock-grid">
+  <div class="con-clock">
+    <h3>Conditions</h3>
     <ul class="weather-ring">
-        <li class = "o1">#</li>
-        <li class = "o2">#</li>
-        <li class = "o3">#</li>
-        <li class = "o4">#</li>
-        <li class = "o5">#</li>
-        <li class = "o6">#</li>
-        <li class = "o7">#</li>
-        <li class = "o8">#</li>
-        <li class = "o9">#</li>
-        <li class ="o10">#</li>
-        <li class ="o11">#</li>
-        <li class ="o12">#</li>
-        <li class = "donut-hole">&#9730 </li>
-        <li class = "i1">1</li>
-        <li class = "i2">2</li>
-        <li class = "i3">3</li>
-        <li class = "i4">4</li>
-        <li class = "i5">5</li>
-        <li class = "i6">6</li>
-        <li class = "i7">7</li>
-        <li class = "i8">8</li>
-        <li class = "i9">9</li>
-        <li class ="i10">10</li>
-        <li class ="i11">11</li>
-        <li class ="i12">12</li>
-        <li class="conditions-dot"></li>
+      <li class="o1">###</li>
+      <li class="o2">###</li>
+      <li class="o3">###</li>
+      <li class="o4">###</li>
+      <li class="o5">###</li>
+      <li class="o6">###</li>
+      <li class="o7">###</li>
+      <li class="o8">###</li>
+      <li class="o9">###</li>
+      <li class="o10">###</li>
+      <li class="o11">###</li>
+      <li class="o12">###</li>
+      <li class="donut-hole1">&#9730 </li>
+      <li class="i1">1</li>
+      <li class="i2">2</li>
+      <li class="i3">3</li>
+      <li class="i4">4</li>
+      <li class="i5">5</li>
+      <li class="i6">6</li>
+      <li class="i7">7</li>
+      <li class="i8">8</li>
+      <li class="i9">9</li>
+      <li class="i10">10</li>
+      <li class="i11">11</li>
+      <li class="i12">12</li>
+      <li class="conditions-dot"></li>
+  </div>
+  </ul>
+  <div class="pre-clock">
+    <h3>Precipitation</h3>
+    <ul class="weather-ring">
+      <li class="o1">###</li>
+      <li class="o2">###</li>
+      <li class="o3">###</li>
+      <li class="o4">###</li>
+      <li class="o5">###</li>
+      <li class="o6">###</li>
+      <li class="o7">###</li>
+      <li class="o8">###</li>
+      <li class="o9">###</li>
+      <li class="o10">###</li>
+      <li class="o11">###</li>
+      <li class="o12">###</li>
+      <li class="donut-hole2">&nbsp;&nbsp;&#9728;</li>
+      <li class="i1">1</li>
+      <li class="i2">2</li>
+      <li class="i3">3</li>
+      <li class="i4">4</li>
+      <li class="i5">5</li>
+      <li class="i6">6</li>
+      <li class="i7">7</li>
+      <li class="i8">8</li>
+      <li class="i9">9</li>
+      <li class="i10">10</li>
+      <li class="i11">11</li>
+      <li class="i12">12</li>
+      <li class="conditions-dot"></li>
     </ul>
-<h3>Precipitation</h3>
-<ul class="weather-ring">
-    <div class="donut-hole">&nbsp;&nbsp;&#9728;</div>
-</ul>
-<h3>Temperature</h3>
-<ul class="weather-ring">
-    <div class="donut-hole">&nbsp;&deg;F</div>
-</ul>
+  </div>
+  <div class="temp-clock">
+    <h3>Temperature</h3>
+    <ul class="weather-ring">
+      <li class="o1">###</li>
+      <li class="o2">###</li>
+      <li class="o3">###</li>
+      <li class="o4">###</li>
+      <li class="o5">###</li>
+      <li class="o6">###</li>
+      <li class="o7">###</li>
+      <li class="o8">###</li>
+      <li class="o9">###</li>
+      <li class="o10">###</li>
+      <li class="o11">###</li>
+      <li class="o12">###</li>
+      <il class="donut-hole3">&nbsp;&deg;F</il>
+      <li class="i1">1</li>
+      <li class="i2">2</li>
+      <li class="i3">3</li>
+      <li class="i4">4</li>
+      <li class="i5">5</li>
+      <li class="i6">6</li>
+      <li class="i7">7</li>
+      <li class="i8">8</li>
+      <li class="i9">9</li>
+      <li class="i10">10</li>
+      <li class="i11">11</li>
+      <li class="i12">12</li>
+      <li class="conditions-dot"></li>
+    </ul>
+  </div>
+</div>
 
 
 <footer>© 2019 | Shane Duke | <span id="getDate"></span>
-</body>
+
+
 </html>

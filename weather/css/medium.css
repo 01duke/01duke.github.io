@@ -1,45 +1,76 @@
-@media screen and (min-width: 32.5rem){
-   
-  .title{
+@media screen and (min-width: 32.5rem) {
+
+  .title {
     color: #110e0e;
     font-size: 45px;
     width: auto;
     margin: auto;
-    text-align:center;
+    text-align: center;
   }
-  .tagline{
+
+  .tagline {
     font-size: 1em;
   }
+
   nav {
     margin: 0;
     max-width: 760px;
-      background-color: #110e0e;
-      position: relative;
+    background-color: #110e0e;
+    position: relative;
   }
-  .icon{
-  width: 100px;
+
+  .icon {
+    width: 100px;
   }
-	.navigation {
-		display: flex;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-	.navigation li {
-		display: block;
-		flex: 1 1 100%;
-	}
-	.navigation li a {
-		color: #67a6d3;
+
+  .navigation {
+    display: flex;
   }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .navigation li a {
+    color: #67a6d3;
+  }
+
   .active {
     background-color: #001f54;
     border-radius: 20px;
 
   }
-  .weather-clock{
+
+  .clock-grid {
     display: grid;
-    grid-column: 1fr 1fr ;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1f;
+  }
+
+  .weather-clock {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr;
 
   }
-} 
+
+  .con-clock {
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+  }
+
+  .pre-clock {
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+  }
+
+  .temp-clock {
+    grid-template-columns: span 2;
+    grid-template-rows: 2;
+  }
+}

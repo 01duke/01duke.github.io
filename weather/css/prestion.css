@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
 @import "/css/normalize.css";
+
 /*
 *.color-primary { color: #67a6d3 }
 *.color-secondary 1 { color: #FFD763 }
@@ -8,83 +9,96 @@
 *
 */
 body {
-    background-color: #110e0e;
-    font-family: 'Roboto', sans-serif;
-    padding: 5px 25px;
-    font-size: 18px;
-    margin: 0;
-    color: #67a6d3;
-    border-radius: 30px;
-  }
-  h1 h2 h3 h4 h5 h6 {
-    font-family: "Merriweather", serif;
-    font-size: 30px;
-    color: #67a6d3 ; 
-    text-align:center;
-  }
-  html {
-    min-width:100px;
-    max-width: 1075px;
-    margin:auto;
-    background-color: #001f54;
-    box-sizing:border-box;
-    padding: .5em;
-    margin-bottom: 2cm;
-  }
-  header{
-      clear: both;
-  }
-  .title {
-    font-family: 'Slabo', serif;
-    background-color: #00bbfa;
-    color: #110e0e;
-    font-size: 1.3em;
-    width: auto;
-    margin: auto;
-    text-align:center;
-    padding: 0.3em;
-    border-radius: 30px;
-  }
-  .tagline{
-    font-style: italic;
-    clear: both;
-    color: #67a6d3;
-    font-size: .8em;
-    padding: .1em;
-    margin: 0;
-  }
-.icon{
-      float: left;
-      width: 50px;
-  }
-  nav a:hover {
-    border-radius: 20px;
-    background-color: #00bbfa;
-    color: #110e0e;
-  }
+  background-color: #110e0e;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #67a6d3;
+  border-radius: 30px;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: "Merriweather", serif;
+  font-size: 30px;
+  color: #67a6d3;
+  text-align: center;
+}
+
+html {
+  min-width: 100px;
+  max-width: 1075px;
+  margin: auto;
+  background-color: #001f54;
+  box-sizing: border-box;
+  padding: .5em;
+  margin-bottom: 2cm;
+}
+
+header {
+  clear: both;
+}
+
+.title {
+  font-family: 'Slabo', serif;
+  background-color: #00bbfa;
+  color: #110e0e;
+  font-size: 1.3em;
+  width: auto;
+  margin: auto;
+  text-align: center;
+  padding: 0.3em;
+  border-radius: 30px;
+}
+
+.tagline {
+  font-style: italic;
+  clear: both;
+  color: #67a6d3;
+  font-size: .8em;
+  padding: .1em;
+  margin: 0;
+}
+
+.icon {
+  float: left;
+  width: 50px;
+}
+
+nav a:hover {
+  border-radius: 20px;
+  background-color: #00bbfa;
+  color: #001f54;
+}
+
 .active {
-background-color: #001f54;
-}
-a:link
-{ color:#67a6d3; }
-a:visited
-{ color: #67a6d3; }
-
-.main-container{
-    display: grid;
-    grid-template-columns: 1fr ;
+  background-color: #001f54;
 }
 
-footer{
-  color:#67a6d3;
+a:link {
+  color: #67a6d3;
+}
+
+a:visited {
+  color: #67a6d3;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer {
+  color: #67a6d3;
   padding: 1em;
   margin: 0;
   text-align: center;
 }
+
 /* interactive menu*/
 nav {
-  margin: 0;
-  margin-top: -2.5em;	
+  margin: 0 0 0 -38px;
+  margin-top: -2.5em;
   width: 100%;
   margin-top: -2.5em;
   background-color: #110e0e;
@@ -92,40 +106,43 @@ nav {
   position: fixed;
   width: 100%;
   border-radius: 30px;
+  z-index: 3;
 }
+
 .navigation {
-	list-style: none;
-	text-align: center;
-	padding: 0;
+  list-style: none;
+  text-align: center;
+  padding: 0 0 0 0;
 }
+
 .navigation li:first-child {
-	display: block;
+  display: block;
 }
+
 .navigation li {
-	display: none;
+  display: none;
 }
+
 .navigation a {
-	display: block;
-	color: #67a6d3;
-	padding: 0.75rem;
-	text-align: center;
-	text-decoration: none;
+  display: block;
+  color: #67a6d3;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
 }
+
 .navigation a:hover {
-    font-weight: 700;
-    border-radius: 20px;
-    background-color: #00bbfa;
-    color: #110e0e;
+  font-weight: 700;
+  border-radius: 20px;
+  background-color: #00bbfa;
+  color: #110e0e;
 }
+
 .responsive li {
-	display: block;
+  display: block;
 }
-/*.weather-active{
-  background: radial-gradient(circle, transparent 40%, gray 40%);
-  border-radius: 100%;
-  height: 170px;
-  width: 170px;
-}*/
+
+/*weather clocks*/
 .weather-ring {
   background: radial-gradient(circle, transparent 40%, gray 40%);
   border-radius: 100%;
@@ -133,54 +150,243 @@ nav {
   width: 170px;
   margin: 65px auto 65px auto;
   position: relative;
- }
-.weather-ring{
-  list-style: none;
 }
+
+ul.weather-ring {
+  list-style: none;
+  padding: 0 0 0 0;
+}
+
 .ball {
   width: 35px;
   height: 35px;
   border-radius: 100%;
   background-color: #00bbfa;
 }
-/*weather clocks*/
-.weather-clock{
+
+.clock-grid {
   display: grid;
   grid-column: 1fr;
+  grid-row: 1fr 1fr 1fr;
+  color: #00bbfa;
+}
 
+div.con-clock {
+  margin: auto;
+  text-align: center;
+  background-color: #404040;
+  max-width: 490px;
+  min-width: 300px;
+  border-radius: 30px;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
 
 }
-.donut-hole {
+
+div.pre-clock {
+  margin: auto;
+  text-align: center;
+  background-color: #404040;
+  max-width: 490px;
+  min-width: 300px;
+  border-radius: 30px;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+}
+
+.temp-clock {
+  margin: auto;
+  text-align: center;
+  background-color: #404040;
+  max-width: 490px;
+  min-width: 300px;
+  border-radius: 30px;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+}
+
+.weather-clock {
+  display: grid;
+  grid-column: 1fr;
+}
+
+.donut-hole1 {
   position: absolute;
-  top: 64px;
-  left: 58px;
-  font-size: 36px;
+  top: 60px;
+  left: 65px;
+  font-size: 50px;
 }
 
-.o1 {position: absolute; top: 15px; left: 115px;}
-.o2 {position: absolute; top: 40px; left: 130px;}
-.o3 {position: absolute; top: 75px; left: 145px;}
-.o4 {position: absolute; top: 105px; left: 135px;}
-.o5 {position: absolute; top: 130px; left: 110px;}
-.o6 {position: absolute; top: 130px; left: 70px;}
-.o7 {position: absolute; top: 130px; left: 44px;}
-.o8 {position: absolute; top: 105px; left: 20px;}
-.o9 {position: absolute; top: 75px; left: 15px;}
-.o10 {position: absolute; top: 40px; left: 10px;}
-.o11 {position: absolute; top: 15px; left: 35px;}
-.o12 {position: absolute; top: 5px; left: 70px; }
-.i1 {position: absolute; top: -30px; left: 130px;}
-.i2 {position: absolute; top: 15px; left: 170px;}
-.i3 {position: absolute; top: 75px; left: 180px;}
-.i4 {position: absolute; top: 120px; left: 170px;}
-.i5 {position: absolute; top: 160px; left: 130px;}
-.i6 {position: absolute; top: 175px; left: 70px;}
-.i7 {position: absolute; top: 160px; left: 10px;}
-.i8 {position: absolute; top: 120px; left: -30px;}
-.i9 {position: absolute; top: 75px; left: -40px;}
-.i10 {position: absolute; top: 15px; left: -30px;}
-.i11 {position: absolute; top: -20px; left: 10px;}
-.i12 {position: absolute; top: -35px; left: 70px;}
+.donut-hole2 {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  font-size: 50px;
+}
+
+.donut-hole3 {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  font-size: 50px;
+}
+
+.o1 {
+  position: absolute;
+  top: -20px;
+  left: 130px;
+}
+
+.o2 {
+  position: absolute;
+  top: 25px;
+  left: 175px;
+}
+
+.o3 {
+  position: absolute;
+  top: 75px;
+  left: 180px;
+}
+
+.o4 {
+  position: absolute;
+  top: 120px;
+  left: 170px;
+}
+
+.o5 {
+  position: absolute;
+  top: 160px;
+  left: 130px;
+}
+
+.o6 {
+  position: absolute;
+  top: 175px;
+  left: 70px;
+}
+
+.o7 {
+  position: absolute;
+  top: 160px;
+  left: 10px;
+}
+
+.o8 {
+  position: absolute;
+  top: 120px;
+  left: -30px;
+}
+
+.o9 {
+  position: absolute;
+  top: 75px;
+  left: -40px;
+}
+
+.o10 {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+}
+
+.o11 {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+}
+
+.o12 {
+  position: absolute;
+  top: -35px;
+  left: 70px;
+}
+
+.i1 {
+  position: absolute;
+  top: 15px;
+  left: 115px;
+  color: #00bbfa;
+}
+
+.i2 {
+  position: absolute;
+  top: 40px;
+  left: 140px;
+  color: #00bbfa;
+}
+
+.i3 {
+  position: absolute;
+  top: 75px;
+  left: 145px;
+  color: #00bbfa;
+}
+
+.i4 {
+  position: absolute;
+  top: 105px;
+  left: 135px;
+  color: #00bbfa;
+}
+
+.i5 {
+  position: absolute;
+  top: 130px;
+  left: 110px;
+  color: #00bbfa;
+}
+
+.i6 {
+  position: absolute;
+  top: 140px;
+  left: 80px;
+  color: #00bbfa;
+}
+
+.i7 {
+  position: absolute;
+  top: 130px;
+  left: 45px;
+  color: #00bbfa;
+}
+
+.i8 {
+  position: absolute;
+  top: 105px;
+  left: 20px;
+  color: #00bbfa;
+}
+
+.i9 {
+  position: absolute;
+  top: 75px;
+  left: 15px;
+  color: #00bbfa;
+}
+
+.i10 {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  color: #00bbfa;
+}
+
+.i11 {
+  position: absolute;
+  top: 15px;
+  left: 35px;
+  color: #00bbfa;
+}
+
+.i12 {
+  position: absolute;
+  top: 5px;
+  left: 70px;
+  color: #00bbfa;
+}
+
 /*#nav a [title~=plan],
 #nav a [title~=plan],
 #nav a [title~=plan],
