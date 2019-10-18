@@ -37,4 +37,9 @@
     border-radius: 20px;
 
   }
+  .weather-clock{
+    display: grid;
+    grid-column: 1fr 1fr ;
+
+  }
 } 
