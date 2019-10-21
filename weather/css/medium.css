@@ -1,5 +1,9 @@
 @media screen and (min-width: 32.5rem) {
 
+  .body {
+    padding: 5px 25px;
+  }
+
   .title {
     color: #110e0e;
     font-size: 45px;
@@ -61,8 +65,8 @@
     color: azure;
     font-size: 6em;
     text-align: center;
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 4;
   }
@@ -70,12 +74,12 @@
   .hot {
     color: #ffaa00;
     font-size: 2em;
-    text-align:center ;
+    text-align: center;
     padding: 0 .5em 0 0;
     grid-column-start: 5;
     grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
   }
 
   .cold {
@@ -85,8 +89,8 @@
     padding: 0 0 0 .5em;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
   }
 
   .wind {

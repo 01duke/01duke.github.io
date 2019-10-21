@@ -3,6 +3,7 @@
 @import "/css/normalize.css";
 
 /*
+*CODEPEN:https://codepen.io/01duke/pen/QWWdKWe
 *.color-primary { color: #67a6d3 }
 *.color-secondary 1 { color: #FFD763 }
 *.color-secondary 2 { color: #131689 }
@@ -11,7 +12,6 @@
 body {
   background-color: #110e0e;
   font-family: 'Roboto', sans-serif;
-  padding: 5px 25px;
   font-size: 18px;
   margin: 0;
   color: #67a6d3;
@@ -97,7 +97,7 @@ footer {
 
 /* interactive menu*/
 nav {
-  margin: 0 0 0 -38px;
+  margin: 0 0 0 -8px;
   margin-top: -2.5em;
   width: 100%;
   margin-top: -2.5em;
@@ -105,7 +105,7 @@ nav {
   bottom: 0;
   position: fixed;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 30px 30px 0 0;
   z-index: 3;
 }
 
