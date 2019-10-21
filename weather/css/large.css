@@ -37,10 +37,11 @@
     border-radius: 20px;
 
   }
+
   .hot {
     color: #ffaa00;
     font-size: 2em;
-    text-align:center ;
+    text-align: center;
     padding: 0 .5em 0 0;
     grid-column-start: 5;
     grid-column-end: 7;
@@ -58,6 +59,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
   }
+
   .clock-grid {
 
     display: grid;
