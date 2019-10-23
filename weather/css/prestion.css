@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap");
 @import "/css/normalize.css";
-
 /*
 *CODEPEN:https://codepen.io/01duke/pen/QWWdKWe
 *.color-primary { color: #67a6d3 }
@@ -31,12 +31,15 @@ html {
   margin: auto;
   background-color: #001f54;
   box-sizing: border-box;
-  padding: .5em;
-  margin-bottom: 2cm;
 }
 
 header {
   clear: both;
+  background-color: #404040;
+}
+
+img .icon{
+  float: left;
 }
 
 .title {
@@ -49,10 +52,12 @@ header {
   text-align: center;
   padding: 0.3em;
   border-radius: 30px;
+  clear: ;
 }
 
 .tagline {
   font-style: italic;
+  font-family: 'ZCOOL XiaoWei', serif;
   clear: both;
   color: #67a6d3;
   font-size: .8em;
@@ -207,7 +212,8 @@ ul.weather-ring {
   grid-column: 1fr;
   grid-row: 1fr 1fr 1fr;
   color: #00bbfa;
-  grid-gap: 1em;
+  padding: .5em;
+  grid-gap: .5em .5em;
 }
 
 .con-clock {
@@ -246,7 +252,7 @@ ul.weather-ring {
 .donut-hole1 {
   position: absolute;
   top: 60px;
-  left: 65px;
+  left: 60px;
   font-size: 50px;
 }
 
@@ -259,9 +265,9 @@ ul.weather-ring {
 
 .donut-hole3 {
   position: absolute;
-  top: 60px;
+  top: 40px;
   left: 50px;
-  font-size: 50px;
+  font-size: 100px;
 }
 
 .o1 {
