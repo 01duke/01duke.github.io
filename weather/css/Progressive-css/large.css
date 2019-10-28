@@ -1,0 +1,40 @@
+@media screen and (min-width: 60rem) {
+
+    title {
+        color: #110e0e;
+        font-size: 50px;
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+
+    nav {
+        margin: 0;
+        max-width: 760px;
+        background-color: #110e0e;
+        position: relative;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: #67a6d3;
+    }
+
+    .active {
+        background-color: #001f54;
+        border-radius: 20px;
+
+    }
+}
