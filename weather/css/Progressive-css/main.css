@@ -10,6 +10,11 @@
 *.color-secondary 2 { color: #131689 }
 *
 */
+[data-src]{
+    min-width: 50px;
+    min-height: 50px;
+}
+
 body {
     background-color: #110e0e;
     font-family: 'Roboto', sans-serif;
@@ -146,6 +151,7 @@ nav {
     display: block;
 }
 
+/* image flex */
 #flex {
     display: flex;
     flex-flow: column;

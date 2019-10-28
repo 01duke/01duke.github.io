@@ -1,0 +1,52 @@
+@media screen and (min-width: 32.5rem) {
+
+    .body {
+        padding: 5px 25px;
+    }
+
+    .title {
+        color: #110e0e;
+        font-size: 45px;
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    nav {
+        margin: 0;
+        max-width: 760px;
+        background-color: #110e0e;
+        position: relative;
+    }
+
+    .icon {
+        width: 100px;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        color: #67a6d3;
+    }
+
+    .active {
+        background-color: #001f54;
+        border-radius: 20px;
+
+    }
+}
