@@ -37,6 +37,22 @@
     border-radius: 20px;
 
   }
+  .real-feel{
+    color: azure;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 4;
+  }
+  .wind {
+    color: azure;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 5;
+  }
 
   .hot {
     color: #ffaa00;

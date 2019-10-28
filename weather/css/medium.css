@@ -58,7 +58,7 @@
     border-radius: 10px;
     width: 100%;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
 
   .current-temp {
@@ -69,6 +69,12 @@
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 4;
+  }
+  .real-feel{
+    color: azure;
+    text-align: center;
+    grid-column: 3;
+    grid-row: 4;
   }
 
   .hot {
@@ -96,10 +102,8 @@
   .wind {
     color: azure;
     text-align: center;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-column: 4;
+    grid-row: 4; 
   }
 
   .clock-grid {
