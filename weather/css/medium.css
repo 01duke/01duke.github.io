@@ -50,7 +50,7 @@
 
   }
 
-  .current-weather {
+  #current-weather {
     display: grid;
     padding: 0 0 0 0;
     list-style: none;
@@ -61,7 +61,7 @@
     grid-template-rows: repeat(5, 1fr);
   }
 
-  .current-temp {
+  #current-temp {
     color: azure;
     font-size: 6em;
     text-align: center;
@@ -70,14 +70,17 @@
     grid-row-start: 1;
     grid-row-end: 4;
   }
-  .real-feel{
+
+  #real-feel {
     color: azure;
     text-align: center;
-    grid-column: 3;
-    grid-row: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 4;
   }
 
-  .hot {
+  #hot {
     color: #ffaa00;
     font-size: 2em;
     text-align: center;
@@ -88,7 +91,7 @@
     grid-row-end: 4;
   }
 
-  .cold {
+  #cold {
     color: #00ffff;
     font-size: 2em;
     text-align: center;
@@ -99,11 +102,17 @@
     grid-row-end: 4;
   }
 
-  .wind {
+  #wind {
+    color: azure;
+    text-align: center;
+    grid-column: 3;
+    grid-row: 5;
+  }
+  #gust{
     color: azure;
     text-align: center;
     grid-column: 4;
-    grid-row: 4; 
+    grid-row: 5;
   }
 
   .clock-grid {
@@ -135,4 +144,26 @@
     grid-column: span 2;
     grid-row: 2;
   }
+}
+
+/* weather background */
+
+.clear {
+  background-image: url("/weather/images/large_background_img/clear-large.jpg");
+}
+
+.rain {
+  background-image: url("/weather/images/large_background_img/rain-large.jpg");
+}
+
+.fog {
+  background-image: url("/weather/images/large_background_img/fog-large.jpg");
+}
+
+.snow {
+  background-image: url("/weather/images/large_background_img/snow-large.jpg");
+}
+
+.clouds {
+  background-image: url("/weather/images/large_background_img/clouds-large.jpg");
 }

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap");
 @import "/css/normalize.css";
+
 /*
 *
 *.color-primary { color: #67a6d3 }
@@ -38,7 +39,7 @@ header {
   background-color: #404040;
 }
 
-img .icon{
+img .icon {
   float: left;
 }
 
@@ -147,7 +148,7 @@ nav {
 }
 
 /*weather clocks*/
-.current-weather {
+#current-weather {
   display: grid;
   padding: 0 0 0 0;
   list-style: none;
@@ -158,32 +159,38 @@ nav {
   grid-template-rows: repeat(5, 1fr);
 }
 
-.current-temp {
+#current-temp {
   color: azure;
   font-size: 3em;
   text-align: center;
   grid-column: span 2;
   grid-row: span 3;
 }
-.real-feel{
+
+#real-feel {
   color: azure;
   text-align: center;
   grid-column: span 2;
-  grid-row: 4 ;
+  grid-row: 4;
 }
 
-.hot {
+#hot {
   color: #ffaa00;
   text-align: right;
   padding: 0 .5em 0 0
 }
 
-.cold {
+#cold {
   color: #00ffff;
   padding: 0 0 0 .5em;
 }
 
-.wind {
+#wind {
+  color: azure;
+  text-align: center;
+  grid-column: span 2;
+}
+#gust{
   color: azure;
   text-align: center;
   grid-column: span 2;
@@ -202,6 +209,16 @@ nav {
 ul.weather-ring {
   list-style: none;
   padding: 0 0 0 0;
+}
+
+#ball,
+#tball,
+#cball {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #00bbfa;
+  color: transparent;
 }
 
 .ball {
@@ -346,7 +363,90 @@ ul.weather-ring {
   top: -35px;
   left: 70px;
 }
+/* ball */
+div#i1.ball {
+  position: absolute;
+  top: 15px;
+  left: 110px;
+  color: #00bbfa;
+}
 
+div#i2.ball {
+  position: absolute;
+  top: 40px;
+  left: 130px;
+  color: #00bbfa;
+}
+
+div#i3.ball {
+  position: absolute;
+  top: 75px;
+  left: 135px;
+  color: #00bbfa;
+}
+
+div#i4.ball {
+  position: absolute;
+  top: 105px;
+  left: 125px;
+  color: #00bbfa;
+}
+
+div#i5.ball {
+  position: absolute;
+  top: 130px;
+  left: 100px;
+  color: #00bbfa;
+}
+
+div#i6.ball {
+  position: absolute;
+  top: 140px;
+  left: 70px;
+  color: #00bbfa;
+}
+
+div#i7.ball {
+  position: absolute;
+  top: 130px;
+  left: 35px;
+  color: #00bbfa;
+}
+
+div#i8.ball {
+  position: absolute;
+  top: 105px;
+  left: 10px;
+  color: #00bbfa;
+}
+
+div#i9.ball {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  color: #00bbfa;
+}
+
+div#i10.ball {
+  position: absolute;
+  top: 40px;
+  left: 7px;
+  color: #00bbfa;
+}
+
+div#i11.ball {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  color: #00bbfa;
+}
+
+div#i12.ball {
+  position: absolute;
+  left: 69px;
+  color: #00bbfa;
+}
+/* end ball */
 .i1 {
   position: absolute;
   top: 15px;
@@ -430,10 +530,34 @@ ul.weather-ring {
   left: 70px;
   color: #00bbfa;
 }
+
+
 /*
 * end of position css 
 * start of current weather
 */
+/* weather background */
+
+.clear {
+  background-image: url("/weather/images/small_background_img/clear-small.jpg");
+}
+
+.rain {
+  background-image: url("/weather/images/small_background_img/rain-small.jpg");
+}
+
+.fog {
+  background-image: url("/weather/images/small_background_img/fog-small.jpg");
+}
+
+.snow {
+  background-image: url("/weather/images/small_background_img/snow-small.jpg");
+}
+
+.clouds {
+  background-image: url("/weather/images/small_background_img/clouds-small.jpg");
+}
+
 
 
 /*#nav a [title~=plan],
