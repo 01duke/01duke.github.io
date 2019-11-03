@@ -14,9 +14,10 @@ body {
   background-color: #110e0e;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  margin: 0;
+  margin: 0 0 125px 0;
   color: #67a6d3;
   border-radius: 30px;
+
 }
 
 h1 h2 h3 h4 h5 h6 {
