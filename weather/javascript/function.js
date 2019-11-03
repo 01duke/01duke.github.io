@@ -1,4 +1,5 @@
 "use strict";
+console.log(`JAVASCRIPT_IS_RUNNING`)
 
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
@@ -15,16 +16,17 @@ function getDate() {
 
 window.onload = getDate();
 /* *************************************
- *  Weather Site JavaScript Functions
+ *  Weather Site JavaScript Functions  *
  ************************************* */
+// DOM listener
 /* *************************************
- *  Computes the wind Chill Temp
+ *  Computes the wind Chill Temp       *
  ************************************* */
 function builWC(speed, temp) {
     let feelTemp = document.getElementById("feeltemp");
     //compute wind chill as wc
     let wc = 35.74 + 0.6215 * temp -
-        //     35.75 * Math.pow(speed, 0.16) + 0.4275 * temp Math.pow(speed, 0.16);
+        //35.75 * Math.pow(speed, 0.16) + 0.4275 * temp Math.pow(speed, 0.16);
         console.log(wc)
     //rounding wc
     wc = Math.floor(wc)
