@@ -243,11 +243,13 @@ ul.weather-ring {
   margin: auto;
   text-align: center;
   background-color: #404040;
-  max-width: 490px;
+  max-width: 90%;
   min-width: 300px;
   border-radius: 30px;
   grid-column: 1;
   grid-row: 1;
+  list-style: none;
+
 
 }
 
@@ -255,21 +257,25 @@ ul.weather-ring {
   margin: auto;
   text-align: center;
   background-color: #404040;
+  max-width: 90%;
   min-width: 300px;
   border-radius: 30px;
   grid-column: 1;
   grid-row: 2;
+  list-style: none;
 }
 
 .temp-clock {
   margin: auto;
   text-align: center;
   background-color: #404040;
-  max-width: 490px;
+  max-width: 90%;
   min-width: 300px;
   border-radius: 30px;
   grid-column: 1;
   grid-row: 3;
+  list-style: none;
+
 }
 
 .donut-hole1 {
@@ -365,84 +371,84 @@ ul.weather-ring {
   left: 70px;
 }
 /* ball */
-div#i1.ball {
+#i1.ball {
   position: absolute;
   top: 15px;
   left: 110px;
   color: #00bbfa;
 }
 
-div#i2.ball {
+#i2.ball {
   position: absolute;
   top: 40px;
   left: 130px;
   color: #00bbfa;
 }
 
-div#i3.ball {
+#i3.ball {
   position: absolute;
   top: 75px;
   left: 135px;
   color: #00bbfa;
 }
 
-div#i4.ball {
+#i4.ball {
   position: absolute;
   top: 105px;
   left: 125px;
   color: #00bbfa;
 }
 
-div#i5.ball {
+#i5.ball {
   position: absolute;
   top: 130px;
   left: 100px;
   color: #00bbfa;
 }
 
-div#i6.ball {
+#i6.ball {
   position: absolute;
   top: 140px;
   left: 70px;
   color: #00bbfa;
 }
 
-div#i7.ball {
+#i7.ball {
   position: absolute;
   top: 130px;
   left: 35px;
   color: #00bbfa;
 }
 
-div#i8.ball {
+#i8.ball {
   position: absolute;
   top: 105px;
   left: 10px;
   color: #00bbfa;
 }
 
-div#i9.ball {
+#i9.ball {
   position: absolute;
   top: 70px;
   left: 0px;
   color: #00bbfa;
 }
 
-div#i10.ball {
+#i10.ball {
   position: absolute;
   top: 40px;
   left: 7px;
   color: #00bbfa;
 }
 
-div#i11.ball {
+#i11.ball {
   position: absolute;
   top: 10px;
   left: 30px;
   color: #00bbfa;
 }
 
-div#i12.ball {
+#i12.ball {
   position: absolute;
   left: 69px;
   color: #00bbfa;
