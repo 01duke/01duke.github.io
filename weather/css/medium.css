@@ -62,7 +62,7 @@
     grid-template-rows: repeat(5, 1fr);
   }
 
-  #current-temp {
+  #temp {
     color: azure;
     font-size: 6em;
     text-align: center;

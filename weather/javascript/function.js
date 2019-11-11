@@ -1,118 +1,84 @@
-"use strict";
-console.log(`FUNCTION_JAVASCRIPT_IS_RUNNING`)
-
-function toggleMenu() {
-  document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-}
-
-  function getDate() {
-    var date = new Date();
-    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var dayName = dayNames[date.getDay()];
-    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    var monthName = monthNames[date.getMonth()];
-    document.getElementById("getDate").innerHTML = dayName + ", " + date.getDate() + " " + monthName + " " + date.getFullYear();
-}
-
-window.onload = getDate();
-/* *************************************
-*  Weather Site JavaScript Functions  *
-************************************* */
-// Listen for the DOM to finish building
-document.addEventListener("DOMContentLoaded", function () {
-  getDate();
-  // variables for wind chill function
-  let temp = 31;
-  let wSpeed = 20;
-  buildWC(wSpeed, temp);
-  let weather = "clear";
-  console.log(weather);
-  // The time indictor function
-  let hour = "6";
-  console.log(hour);
-  timeBall(hour);
-
-  // Changes the backgorund image
-  changeBackImage(weather);
-})
-
+'use strict';
+console.log(`Function JavaScript is running`)
 var $ = document.querySelector.bind(document);
 var $$ = document.querySelector.bind(document);
 /* *************************************
- *  Computes the wind Chill Temp       *
+ *  Weather Site JavaScript Functions *
  ************************************* */
-function buildWC(wSpeed, temp) {
+// Listen for the DOM to finish building
+document.addEventListener("DOMContentLoaded", function () {
+  //get modified date function 
+  buildModDate();
+  //get WindChill
+  let speed = 25;
+  let temp = 20;
   let feelTemp = document.getElementById("real-feel");
-  let highTemp = document.getElementById("hot");
-  let lowTemp = document.getElementById("cold");
-  let currentTemp = document.getElementById("current-temp");
-  let windSpeed = document.getElementById("wind");
-  let windGusts = document.getElementById("gusts");
-  // Compute the windchill
-  let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(wSpeed, 0.16) + 0.4275 * temp * Math.pow(wSpeed, 0.16);
-  console.log(wc);
-  // Round the answer down to integer
-  wc = Math.floor(wc);
-
-  // If chill is greater than temp, return the temp
-  wc = (wc > temp) ? temp : wc;
-
-  // Display windchill
-  console.log(wc);
-
-  let high = temp + 32;
-  let low = temp - 25;
-  feelTemp.innerHTML = wc;
-  highTemp.innerHTML = high;
-  lowTemp.innerHTML = low;
-  currentTemp.innerHTML = temp;
-  windSpeed.innerHTML = wSpeed;
-  windGusts.innerHTML = "Gusts: " + (wSpeed + 5);
-
+  console.log(feelTemp)
+  feelTemp.innerHTML =  buildWC(speed, temp);
+  //ball
+  let hour = "2";
+  console.log(hour);
+  timeBall(hour);
+});
+// Build the last modified date
+function buildModDate() {
+  const dayArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  let lastMod = new Date(document.lastModified);
+  const dayName = dayArray[lastMod.getDay()];
+  const monthName = monthArray[lastMod.getMonth()];
+  const formattedDate = dayName + ", " + lastMod.getDate() + " " + monthName + ", " + lastMod.getFullYear();
+  document.querySelector('#modDate').innerText = formattedDate;
+  getElementById(formattedDate);
 }
+/* *************************************
+ *  small Menu                        *
+ ************************************* */
+function toggleMenu() {
+  document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
+/* *************************************
+ *  Compute Wind Chill                 *
+ ************************************* */
+function buildWC(speed, temp) {
+  // let feelTemp = document.getElementById("real-feel");
+  // compute
+  let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
+  console.log(wc);
+  // round wc
+  wc = Math.floor(wc);
+  // return larger
+  wc = (wc > temp) ? temp : wc;
+  // console and return the windchill
+  console.log(wc);
+  return wc
+}
+/* *************************************
+ *  ball movement                      *
+ ************************************* */
 
-
-function timeBall(hour) {
-  // Find.ball and remove them
+// Time Indicator Function
+function timeBall(hour){
+  // Find all "ball" classes and remove them
   let x = document.querySelectorAll(".ball");
   for (let item of x) {
-    console.log(item);
-    item.classList.remove("ball");
+      console.log(item);
+      item.classList.remove("ball");
   }
-
-  // Find .ball class
-  let hr = document.querySelectorAll(".i" + hour);
-  for (let item of hr) {
-    item.classList.add("ball");
+  
+  // Find all hours that match the parameter and add the "ball" class
+  let hr = document.querySelectorAll(".i"+hour);
+  for (let item of hr){
+      item.classList.add("ball");
   }
-
 }
+/* *************************************
+ *  fetch JSON Weather                       *
+ ************************************* */
+// let locName = p.properties.relative.properties.city;
+// let stateName = p.properties.relative.properties.state;
+// let fullName = locName + ", " + stateName
+// let weatherURL = /weather/javascript/idahoweather.json;
+// function fetchWeatherData(weatherURL){
 
-//background image
-function changeBackImage(weather) {
-  //section ID
-  let x = document.getElementById("section");
-  // convert lowercase
-  weather = weather.toLowerCase();
-
-  //class name to backgorund image
-  console.log(weather);
-  switch (weather) {
-    case "clear":
-      x.className += "clear";
-      break;
-    case "rain":
-      x.className += "rain";
-      break;
-    case "fog":
-      x.className += "fog";
-      break;
-    case "snow":
-      x.className += "snow";
-      break;
-    case "clouds":
-      x.className += "clouds";
-      break;
-  }
-
-}
+// }

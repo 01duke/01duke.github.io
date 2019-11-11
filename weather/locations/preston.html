@@ -10,7 +10,6 @@
   <link type="text/css" rel="stylesheet" href="/weather/css/medium.css" media="screen and (min-width: 32.5rem)">
   <link type="text/css" rel="stylesheet" href="/weather/css/large.css" media="screen and (min-width: 60rem)">
   <link type="text/css" rel="stylesheet" href="/weather/css/font/weather-icons.min.css">
-  <script src="/weather/javascript/function.js" async></script>
 </head>
 <main>
   <div class="main-container">
@@ -21,7 +20,7 @@
     </header>
     <nav>
       <ul class="navigation">
-        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a href="/index.html"> Home </a></li>
         <li><a href="preston.html" class="active"> Preston </a></li>
         <li><a href="#"> Soda Springs </a></li>
@@ -36,8 +35,8 @@
 <h1>Preston, ID</h1>
 <p>42.0963° N, 111.8766° W</p>
 <ul id="current-weather">
-  <li id="real-feel">Real Feel: ??<i class="wi wi- wi-fahrenheit"></i></li>
-  <li id="current-temp"> ??<i class="wi wi- wi-fahrenheit"></i></li>
+  <li id="real-feel">Real Feel:<span id=real-feel></span> <i class="wi wi- wi-fahrenheit"></i></li>
+  <li id="temp"> <i class="wi wi- wi-fahrenheit"></i></li>
   <li id="hot">??<i class="wi wi- wi-fahrenheit"></i></li>
   <li id="cold">??<i class="wi wi- wi-fahrenheit"></i></li>
   <li id="wind"><i class="wi wi-strong-wind"></i> ?? mph</li>
@@ -60,7 +59,7 @@
       <li class="o11">###</li>
       <li class="o12">###</li>
       <li class="donut-hole1"><i class="wi wi-umbrella"></i> </li>
-      <li class="i1">1</li>
+      <li class="i1 ball">1</li>
       <li class="i2">2</li>
       <li class="i3">3</li>
       <li class="i4">4</li>
@@ -89,7 +88,7 @@
   </div>
 
   <div class="pre-clock">
-    <h3>Precipitation</h3>
+    <h3>Wind</h3>
     <ul class="weather-ring">
       <li class="o1">###</li>
       <li class="o2">###</li>
@@ -103,7 +102,7 @@
       <li class="o10">###</li>
       <li class="o11">###</li>
       <li class="o12">###</li>
-      <li class="donut-hole2"><i class="wi wi-wu-mostlysunny"></i></li>
+      <li class="donut-hole2">MPH</li>
       <li class="i1">1</li>
       <li class="i2">2</li>
       <li class="i3">3</li>
@@ -175,10 +174,8 @@
     </ul>
   </div>
 </div>
-
 <footer
->© 2019 | Shane Duke | <span id="getDate"></span>
+>© 2020 | Shane Duke | <span id="formattedDate"></span>
 </footer>
-
-
+<script src="/weather/javascript/function.js" async></script>
 </html>

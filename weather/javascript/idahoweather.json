@@ -1,0 +1,66 @@
+{
+  "Preston": {
+    "geometry": {
+      "type": "point",
+      "coordinates": {
+        "0": -111.8766,
+        "1": 42.0963
+      }
+    },
+    "properties": {
+      "forecast": "https://api.weather.gov/gridpoints/PIH/112,9/forecast",
+      "forecastHourly": "https://api.weather.gov/gridpoints/PIH/112,9/forecast/hourly",
+      "observationStations": "https://api.weather.gov/gridpoints/PIH/112,9/stations",
+      "relativeLocation": {
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "0": -111.8766,
+            "1": 42.0963
+          }
+        },
+        "properties": {
+          "city": "Preston",
+          "state": "Idaho",
+          "temperature": 39,
+          "windSpeed": 5.1,
+          "windGust": 6.3,
+          "highTemp": 50,
+          "lowTemp": 26
+        }
+      }
+    }
+  },
+  "Soda Springs": {
+    "geometry": {
+      "type": "point",
+      "coordinates": {
+        "0": -111.6047,
+        "1": 42.6544
+      }
+    },
+    "properties": {
+      "forecast": "https://api.weather.gov/gridpoints/PIH/125,33/forecast",
+      "forecastHourly": "https://api.weather.gov/gridpoints/PIH/125,33/forecast/hourly",
+      "observationStations": "https://api.weather.gov/gridpoints/PIH/125,33/stations",
+      "relativeLocation": {
+        "geometry": {
+          "type": "point",
+          "coordinates": {
+            "0": -111.6047,
+            "1": 42.6544
+          }
+        },
+        "properties": {
+          "city": "Soda Springs",
+          "state": "Idaho",
+          "temperature": 38,
+          "windSpeed": 5,
+          "windGust": 7,
+          "highTemp": 44,
+          "lowTemp": 20
+        }
+      }
+    }
+  }
+}
