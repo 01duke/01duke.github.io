@@ -54,7 +54,7 @@
     grid-row: 5;
   }
 
-  #hot {
+  #high {
     color: #ffaa00;
     font-size: 2em;
     text-align: center;
@@ -65,7 +65,7 @@
     grid-row-end: 3;
   }
 
-  #cold {
+  #low {
     color: #00ffff;
     font-size: 2em;
     text-align: center;
@@ -76,7 +76,7 @@
     grid-row-end: 3;
   }
 
-  #gust {
+  #gusts {
     color: azure;
     text-align: center;
     grid-column: span;

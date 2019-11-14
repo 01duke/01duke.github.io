@@ -93,7 +93,9 @@ a:visited {
   display: grid;
   grid-template-columns: 1fr;
 }
-
+#formattedDate{
+  color: #67a6d3;
+}
 footer {
   color: #67a6d3;
   padding: 1em;
@@ -175,13 +177,13 @@ nav {
   grid-row: 4;
 }
 
-#hot {
+#high {
   color: #ffaa00;
   text-align: right;
   padding: 0 .5em 0 0
 }
 
-#cold {
+#low {
   color: #00ffff;
   padding: 0 0 0 .5em;
 }
@@ -191,7 +193,7 @@ nav {
   text-align: center;
   grid-column: span 2;
 }
-#gust{
+#gusts{
   color: azure;
   text-align: center;
   grid-column: span 2;
