@@ -1,0 +1,99 @@
+@media only screen and (min-width: 32.51rem) {
+
+    header{
+        font-size: 2rem;
+        
+    }
+    nav a{
+        text-align: center;
+        color: white;
+      
+        font-size: 1.5rem;
+        text-decoration: none;
+        border-style: solid;
+        border-color: black;
+        
+    }
+
+    nav{
+        background-color: #ccc;
+    }
+    
+    nav ul li{
+        flex: 1;
+    }
+   
+
+    nav ul.hide{
+        display: flex;
+    }
+
+    nav button{
+        display: none;
+    }
+    
+    
+
+    header img{
+        float: left;
+    }
+
+    #section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    /*
+    div img{
+        padding: 1rem;
+        width: 20%;
+        border-radius: 2rem;
+    }*/
+
+    main{
+       margin: 0% 10% 0% 10%;
+    }
+
+    
+    
+    #wind{
+        grid-column: 9/span 11;
+    }
+
+
+
+    .weather-temp{
+        width: 75%;
+            
+        
+    }
+
+    .weatherHeader{
+        width: 75%;
+       
+    }
+
+    .clear{
+        background-image: url("img/clear.jpg");
+    }
+    
+    .rain{
+        background-image: url("img/rain.jpg");
+    }
+    
+    .fog{
+        background-image: url("img/fog.jpg");
+    }
+    
+    .snow{
+        background-image: url("img/snow.jpg");
+    }
+    
+    .clouds{
+        background-image: url("img/clouds.jpg");
+    }
+    
+   
+}
