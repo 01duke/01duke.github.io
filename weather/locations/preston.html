@@ -7,36 +7,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD:weather/locations/preston.html
   <link href="../css/preston-small.css" rel="stylesheet" media="screen">
   <link href="../css/preston-medium.css" rel="stylesheet" media="screen">
   <link href="../css/preston-large.css" rel="stylesheet" media="screen">
-  <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
-  <link href="../css/componet.css" rel="stylesheet" media="screen">
-  <title id="page-title"> | Preston Weather</title>
-=======
-  <title id="page-title">| The Weather Channel</title>
-  <link type="text/css" rel="stylesheet" href="/weather/css/prestion.css" media="screen">
-  <link type="text/css" rel="stylesheet" href="/weather/css/medium.css" media="screen and (min-width: 32.5rem)">
-  <link type="text/css" rel="stylesheet" href="/weather/css/large.css" media="screen and (min-width: 60rem)">
   <link type="text/css" rel="stylesheet" href="/weather/css/font/weather-icons.min.css">
->>>>>>> cda5877779d5807307478e0502fab53a5da5309d:oldCSS/preston.html
+  <title id="page-title"> | Preston Weather</title>
 </head>
 
 <header>
 
   <img src="../images/weather_channel_icon.png" alt="weather image">
   <section class="headings">
-    <h1>Tetonia Weather</h1>
-    <p>100% chance of satisfaction</p>
+    <h1>Duke's Weather</h1>
+    <p>can't out run the weather</p>
   </section>
 
 </header>
 
 <nav id="page-nav">
   <button onclick="toggleMenu()">&#9776; Menu</button>
-  <ul id="primaryNav" class="hide">
+  <ul id="navigation" class="hide">
     <li><a href="#">Home</a></li>
     <li class="active"><a href="/weather/locations/preston.html">Preston</a></li>
     <li><a href="./sodaSpring.html">Soda Springs</a></li>
@@ -47,7 +37,7 @@
 </nav>
 
 
-<section id="status">Please be patient while I get your weather information.</section>
+<section id="status">Getting weather information</section>
 
 
 <main id="main-content" class="hide">
@@ -56,8 +46,7 @@
   <h2 id=contentHeading>?</h2>
   <p id=latLon>?</p>
 
-  <section id="section">
-    <!--  <img class="weather-temp" src="../images/weather-temp.png" alt="weather-temp"> -->
+  <section id="weather-section">
     <div class="weatherHeader">
       <p id="high">??</p>
       <p id="low">??</p>
@@ -67,12 +56,10 @@
       <p id="gusts">??</p>
 
     </div>
-    <Div class="container">
+    <div class="container">
       <h3 class="precipTitle">Wind</h3>
       <div class="precipitation">
-        <!--<img class="weather-temp" src="../images/weather-temp.png" alt="weather-temp">
-            <img src="../images/temperature.png" alt="temperature-pic">-->
-
+        <!-- oustside -->
         <div id="o1">??</div>
         <div id="o2">??</div>
         <div id="o3">??</div>
@@ -87,44 +74,27 @@
         <div id="o12">??</div>
 
         <div id="mid">MPH</div>
-
-        <div class="i1 ball">??</div>
-        <div class="i2 ball">??</div>
-        <div class="i3 ball">??</div>
-        <div class="i4 ball">??</div>
-        <div class="i5 ball">??</div>
-        <div class="i6 ball">??</div>
-        <div class="i7 ball">??</div>
-        <div class="i8 ball">??</div>
-        <div class="i9 ball">??</div>
-        <div class="i10 ball">??</div>
-        <div class="i11 ball">??</div>
-        <div class="i12 ball">??</div>
-
-        <!--<div id="i1"class="ball">1</div>
-            <div id="i2"class="ball">2</div>
-            <div id="i3"class="ball">3</div>
-            <div id="i4"class="ball">4</div>
-            <div id="i5"class="ball">5</div>
-            <div id="i6"class="ball">6</div>
-            <div id="i7"class="ball">7</div>
-            <div id="i8"class="ball">8</div>
-            <div id="i9"class="ball">9</div>
-            <div id="i10"class="ball">10</div>
-            <div id="i11"class="ball">11</div>
-            <div id="i12"class="ball">12</div>-->
-
+        <!-- inside -->
+        <div class="i1 ball">1</div>
+        <div class="i2 ball">2</div>
+        <div class="i3 ball">3</div>
+        <div class="i4 ball">4</div>
+        <div class="i5 ball">5</div>
+        <div class="i6 ball">6</div>
+        <div class="i7 ball">7</div>
+        <div class="i8 ball">8</div>
+        <div class="i9 ball">9</div>
+        <div class="i10 ball">10</div>
+        <div class="i11 ball">11</div>
+        <div class="i12 ball">12</div>
         <div id="circle"></div>
-        <!--<div id="ball"></div>-->
-        <!--<img src="../images/conditions.png" alt="conditions-pic">-->
       </div>
-    </Div>
-    <Div class="container">
+    </div>
+    <div class="container">
       <h3 class="precipTitle">Temperatures</h3>
-      <Div class="temperatures">
+      <div class="temperatures">
 
-        <!--<img src="../images/temperature.png" alt="temperature-pic">-->
-
+        <!-- outside -->
         <div id="to1">??&#176;</div>
         <div id="to2">??&#176;</div>
         <div id="to3">??&#176;</div>
@@ -139,7 +109,7 @@
         <div id="to12">??&#176;</div>
 
         <div id="tmid">&#8457;</div>
-
+        <!-- inside -->
         <div class="i1 ball">1</div>
         <div class="i2 ball">2</div>
         <div class="i3 ball">3</div>
@@ -152,33 +122,28 @@
         <div class="i10 ball">10</div>
         <div class="i11 ball">11</div>
         <div class="i12 ball">12</div>
-
         <div id="tcircle"></div>
 
-        <!--<img src="../images/conditions.png" alt="conditions-pic">-->
-      </Div>
+      </div>
     </div>
-    <Div class="container">
+    <div class="container">
       <h3 class="precipTitle">Conditions</h3>
-      <Div class="conditions">
-        <!--<img class="weather-temp" src="../images/weather-temp.png" alt="weather-temp">
-                    <img src="../images/temperature.png" alt="temperature-pic">-->
-
-        <div id="co1">&#x1F324;</div>
-        <div id="co2">&#x1F324;</div>
-        <div id="co3">&#x1F324;</div>
-        <div id="co4">&#x2600;</div>
-        <div id="co5">&#x2600;</div>
-        <div id="co6">&#x2600;</div>
-        <div id="co7">&#x1F327;</div>
-        <div id="co8">&#x1F327;</div>
-        <div id="co9">&#x1F327;</div>
-        <div id="co10">&#x1F328;</div>
-        <div id="co11">&#x1F328;</div>
-        <div id="co12">&#x1F329;</div>
-
-
-
+      <div class="conditions">
+        <!-- outside -->
+        <div id="co1">??</div>
+        <div id="co2">??</div>
+        <div id="co3">??</div>
+        <div id="co4">??</div>
+        <div id="co5">??</div>
+        <div id="co6">??</div>
+        <div id="co7">??</div>
+        <div id="co8">??</div>
+        <div id="co9">??</div>
+        <div id="co10">??</div>
+        <div id="co11">??</div>
+        <div id="co12">??</div>
+        <!-- inside -->
+         <div id="cmid"><i class="wi wi-umbrella"></i> </div>
         <div class="i1 ball">1</div>
         <div class="i2 ball">2</div>
         <div class="i3 ball">3</div>
@@ -191,25 +156,17 @@
         <div class="i10 ball">10</div>
         <div class="i11 ball">11</div>
         <div class="i12 ball">12</div>
-
         <div id="ccircle"></div>
-
-        <!--<img src="../images/conditions.png" alt="conditions-pic">-->
-      </Div>
-    </Div>
+      </div>
+    </div>
+    
   </section>
 
-
-
-
   <footer>
-    &copy; | Tetonia Weather |
-    <br>
-    <section class="dateMod">
-      Today's Date: <span id="todaysDate"></span>
+    2020© | Shane Duke |<div class="dateMod"><span id="todaysDate"></span>
       <script src="/weather/javascript/functions.js"></script>
 
-    </section>
+    </div>
   </footer>
 
 </main>

@@ -41,7 +41,7 @@ fetchWeatherData(weatherURL);
 
 // Handles small screen menu
 function toggleMenu(){
-    document.getElementById("primaryNav").classList.toggle("hide");
+    document.getElementById("navigation").classList.toggle("hide");
 }
 
 
@@ -135,8 +135,8 @@ function timeBall(hour){
 
 // Changes the background image
 function changeSummaryImage(weather){
-    // gets the section Id
-    let x = document.getElementById('section');
+    // gets the weather-section Id
+    let x = document.getElementById('weather-section');
 
     // this changes everything entered into lowercase
      weather = weather.toLowerCase();
