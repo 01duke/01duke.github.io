@@ -8,6 +8,9 @@
 *.color-secondary 1 { color: #FFD763 }
 *.color-secondary 2 { color: #131689 }
 *
+font-family: 'Roboto', sans-serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'ZCOOL XiaoWei', serif;
 */
 
 header {
@@ -17,33 +20,28 @@ header {
     padding: .5rem;
     overflow: hidden;
     font-size: 2rem;
+    font-family: 'Slabo 27px', serif;
+
 }
+
+header p {
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
 body {
     color: #00bbfa;
     background-color: #001f54;
-    margin: 0;
     margin: 0 0 70px 0;
+    font-family: 'Roboto', sans-serif;
 }
-
-h1 h2 h3 h4 h5 h6 {
-    font-size: 30px;
-    color: #00bbfa;
-    text-align: center;
-    margin: 10px, 10px, 10px, 10px;
-}
-
 
 ul {
     padding: 0;
-    margin: 0;
-
 }
 
 nav {
     margin: 0 0 0 0px;
-    margin-top: -2.5em;
     width: 100%;
-    margin-top: -2.5em;
     background-color: #110e0e;
     bottom: 0;
     position: fixed;
@@ -55,22 +53,20 @@ nav button {
     margin: 1rem;
     background-color: transparent;
     border: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #00bbfa;
 }
+
 a {
-    border-style: double ;
+    border-style: double;
     padding: 10;
-
-
 }
 
 nav ul li a {
+    padding: 1em;
     display: block;
-    padding: .8rem 2%;
     text-decoration: none;
     color: #00bbfa;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 nav ul li.active a {
@@ -100,7 +96,7 @@ main {
 p {
     margin: 0;
     color: #00bbfa;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 h2 {
@@ -114,6 +110,7 @@ footer {
     bottom: 0;
     background-color: #110e0e;
     color: #00bbfa;
+    text-align: center;
 }
 
 
@@ -128,15 +125,15 @@ section img {
     border-radius: 1rem;
     display: grid;
     grid-template-columns: repeat(27, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(1fr);
     justify-content: center;
     margin: .5rem;
-    background-color: #110e0e
+    background-color: #110e0ec9
 }
 
 #current {
     text-align: center;
-    font-size: 4rem;
+    font-size: 6rem;
     grid-column: 9/span 10;
     grid-row: 4/span 5;
 }
@@ -145,7 +142,7 @@ section img {
     text-align: center;
     grid-column: 9/span 10;
     grid-row: 8/span 9;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #high {
@@ -153,6 +150,7 @@ section img {
     grid-column: 3/span 4;
     grid-row: 5/span 6;
     color: #ffaa00;
+    font-size: 2.8rem;
 }
 
 #low {
@@ -160,18 +158,21 @@ section img {
     grid-column: 20/span 21;
     grid-row: 5/span 6;
     color: #00ffff;
+    font-size: 2.8rem;
 }
 
 #gusts {
     font-size: 1.2rem;
     grid-column: 16/span 18;
     grid-row: 10/span 12;
+    font-size: 1.5rem;
 }
 
 #wind {
     font-size: 1.2rem;
     grid-column: 6/span 9;
     grid-row: 10/span 12;
+    font-size: 1.5rem;
 }
 
 #weather-section {
@@ -179,58 +180,54 @@ section img {
 }
 
 .clear {
-    background-image: url("img/clear800.jpg");
+    background-image: url("/weather/images/img/clear800.jpg");
 }
 
 .rain {
-    background-image: url("img/rain800.jpg");
+    background-image: url("/weather/images/img/rain800.jpg");
 }
 
 .fog {
-    background-image: url("img/fog800.jpg");
+    background-image: url("/weather/images/img/fog800.jpg");
 }
 
 .snow {
-    background-image: url("img/snow800.jpg");
+    background-image: url("/weather/images/img/snow800.jpg");
 }
 
 .clouds {
-    background-image: url("img/clouds800.jpg");
+    background-image: url("/weather/images/img/clouds800.jpg");
 }
 
 .hide {
     display: none;
 }
 
-/* Constrain condition images */
-#condition img {
-    max-width: 40%;
-}
 
-/* component css */
-.precipitation {
-    display: grid;
-    grid-template-columns: repeat(20, 1rem);
-    grid-template-rows: repeat(21, 1rem);
-    justify-content: center;
-    padding: 0 3rem 0 3rem;
-}
+/* weather clock css */
 
-.container {
+.weather-container {
     display: flex;
     flex-direction: column;
     border-style: solid;
     border-radius: 1rem;
     margin: .5rem;
-    background-color: #110e0e;
+    background-color: #110e0ec9;
 }
+
+.wind {
+    display: grid;
+    grid-template-columns: repeat(20, 1rem);
+    grid-template-rows: repeat(21, 1rem);
+    justify-content: center;
+}
+
 
 .temperatures {
     display: grid;
     grid-template-columns: repeat(20, 1rem);
     grid-template-rows: repeat(21, 1rem);
     justify-content: center;
-    padding: 0 3rem 0 3rem;
 }
 
 .conditions {
@@ -238,327 +235,13 @@ section img {
     grid-template-columns: repeat(20, 1rem);
     grid-template-rows: repeat(21, 1rem);
     justify-content: center;
-    padding: 0 3rem 0 3rem;
-}
-
-#cmid {
-    grid-column: 8/14;
-    grid-row: 9/13;
-    font-size: 5rem;
-}
-
-#tmid {
-    grid-column: 8/14;
-    grid-row: 8/13;
-    font-size: 6rem;
-}
-
-#mid {
-    grid-column: 7/14;
-    grid-row: 10/13;
-    font-size: 4rem;
-}
-
-#o1,
-#to1,
-#co1 {
-    grid-column: 10;
-    font-size: 1.5rem;
-}
-
-#o2,
-#to2,
-#co2 {
-    grid-column: 15;
-    grid-row: 2;
-    font-size: 1.5rem;
-}
-
-#o3,
-#to3,
-#co3 {
-    grid-column: 18;
-    grid-row: 6;
-    font-size: 1.5rem;
-}
-
-#o4,
-#to4,
-#co4 {
-    grid-column: 19;
-    grid-row: 11;
-    font-size: 1.5rem;
-}
-
-#o5,
-#to5,
-#co5 {
-    grid-column: 18;
-    grid-row: 16;
-    font-size: 1.5rem;
-}
-
-#o6,
-#to6,
-#co6 {
-    grid-column: 15;
-    grid-row: 19;
-    font-size: 1.5rem;
-}
-
-#o7,
-#to7,
-#co7 {
-    grid-column: 10;
-    grid-row: 20;
-    font-size: 1.5rem;
-}
-
-#o8,
-#to8,
-#co8 {
-    grid-column: 5;
-    grid-row: 19;
-    font-size: 1.5rem;
-}
-
-#o9,
-#to9,
-#co9 {
-    grid-column: 2;
-    grid-row: 16;
-    font-size: 1.5rem;
-}
-
-#o10,
-#to10,
-#co10 {
-
-    grid-row: 11;
-    font-size: 1.5rem;
-}
-
-#o11,
-#to11,
-#co11 {
-    grid-column: 2;
-    grid-row: 6;
-    font-size: 1.5rem;
-}
-
-#o12,
-#to12,
-#co12 {
-    grid-column: 5;
-    grid-row: 2;
-    font-size: 1.5rem;
-
-}
-
-#i1,
-#ti1,
-#ci1 {
-    grid-column: 14;
-    grid-row: 5;
-    font-size: 1.4rem;
-}
-
-#i2,
-#ti2,
-#ci2 {
-    grid-column: 16;
-    grid-row: 8;
-    font-size: 1.4rem;
-}
-
-#i3,
-#ti3,
-#ci3 {
-    grid-column: 17;
-    grid-row: 11/13;
-    font-size: 1.4rem;
-}
-
-#i4,
-#ti4,
-#ci4 {
-    grid-column: 16;
-    grid-row: 14;
-    font-size: 1.4rem;
-}
-
-#i5,
-#ti5,
-#ci5 {
-    grid-column: 14;
-    grid-row: 16;
-    font-size: 1.4rem;
-}
-
-#i6,
-#ti6,
-#ci6 {
-    grid-column: 10/12;
-    grid-row: 17/19;
-    font-size: 1.8rem;
-}
-
-#i7,
-#ti7,
-#ci7 {
-    grid-column: 7;
-    grid-row: 16;
-    font-size: 1.4rem;
-}
-
-#i8,
-#ti8,
-#ci8 {
-    grid-column: 5;
-    grid-row: 14;
-    font-size: 1.4rem;
-}
-
-#i9,
-#ti9,
-#ci9 {
-    grid-column: 4;
-    grid-row: 11;
-    font-size: 1.4rem;
-}
-
-#i10,
-#ti10,
-#ci10 {
-    grid-column: 5;
-    grid-row: 8;
-    font-size: 1.4rem;
-}
-
-#i11,
-#ti11,
-#ci11 {
-    grid-column: 7;
-    grid-row: 5;
-    font-size: 1.4rem;
-}
-
-#i12,
-#ti12,
-#ci12 {
-    grid-column: 10;
-    grid-row: 4;
-    font-size: 1.4rem;
-}
-
-.i1,
-.ti1,
-.ci1 {
-    grid-column: 13/span 2;
-    grid-row: 5;
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.i2,
-.ti2,
-.ci2 {
-    grid-column: 15/span 2;
-    grid-row: 8;
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.i3,
-.ti3,
-.ci3 {
-    grid-column: 16/span 2;
-    grid-row: 11/13;
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.i4,
-.ti4,
-.ci4 {
-    grid-column: 15/span 2;
-    grid-row: 14/span 2;
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.i5,
-.ti5,
-.ci5 {
-    grid-column: 13/span 2;
-    grid-row: 16/span 2;
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.i6,
-.ti6,
-.ci6 {
-    grid-column: 10/12;
-    grid-row: 17/19;
-    font-size: 1.8rem;
-}
-
-.i7,
-.ti7,
-.ci7 {
-    grid-column: 7;
-    grid-row: 16;
-    font-size: 1.4rem;
-}
-
-.i8,
-.ti8,
-.ci8 {
-    grid-column: 4/span 2;
-    grid-row: 14;
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.i9,
-.ti9,
-.ci9 {
-    grid-column: 4;
-    grid-row: 11;
-    font-size: 1.4rem;
-
-}
-
-.i10,
-.ti10,
-.ci10 {
-    grid-column: 5;
-    grid-row: 8;
-    font-size: 1.4rem;
-}
-
-.i11,
-.ti11,
-.ci11 {
-    grid-column: 7;
-    grid-row: 5;
-    font-size: 1.4rem;
-}
-
-.i12,
-.ti12,
-.ci12 {
-    grid-column: 10;
-    grid-row: 4;
-    font-size: 1.4rem;
 }
 
 #circle,
 #tcircle,
 #ccircle {
-    background: radial-gradient(circle, transparent 40%, rgba(0,0,0,.3) 40%);
-    
+    background: radial-gradient(circle, transparent 40%, rgba(0, 0, 0, .3) 40%);
+
     border-radius: 100%;
     height: 250px;
     width: 250px;
@@ -575,10 +258,322 @@ section img {
 }
 
 
-.precipTitle {
+.weather-title {
     grid-column: 6;
     grid-row: 20;
-
     font-size: 2rem;
     text-align: center;
+}
+
+#cmid {
+    grid-column: 8/14;
+    grid-row: 9/13;
+    font-size: 5rem;
+}
+
+#tmid {
+    grid-column: 8/14;
+    grid-row: 8/13;
+    font-size: 6rem;
+}
+
+#wmid {
+    grid-column: 6/14;
+    grid-row: 9/13;
+    font-size: 4rem;
+}
+
+#o1,
+#to1,
+#co1 {
+    grid-column: 10;
+    font-size: 2rem;
+}
+
+#o2,
+#to2,
+#co2 {
+    grid-column: 15;
+    grid-row: 2;
+    font-size: 2rem;
+}
+
+#o3,
+#to3,
+#co3 {
+    grid-column: 18;
+    grid-row: 6;
+    font-size: 2rem;
+}
+
+#o4,
+#to4,
+#co4 {
+    grid-column: 19;
+    grid-row: 11;
+    font-size: 2rem;
+}
+
+#o5,
+#to5,
+#co5 {
+    grid-column: 18;
+    grid-row: 16;
+    font-size: 2rem;
+}
+
+#o6,
+#to6,
+#co6 {
+    grid-column: 15;
+    grid-row: 19;
+    font-size: 2rem;
+}
+
+#o7,
+#to7,
+#co7 {
+    grid-column: 10;
+    grid-row: 20;
+    font-size: 2rem;
+}
+
+#o8,
+#to8,
+#co8 {
+    grid-column: 5;
+    grid-row: 19;
+    font-size: 2rem;
+}
+
+#o9,
+#to9,
+#co9 {
+    grid-column: 2;
+    grid-row: 16;
+    font-size: 2rem;
+}
+
+#o10,
+#to10,
+#co10 {
+
+    grid-row: 11;
+    font-size: 2rem;
+}
+
+#o11,
+#to11,
+#co11 {
+    grid-column: 2;
+    grid-row: 6;
+    font-size: 2rem;
+}
+
+#o12,
+#to12,
+#co12 {
+    grid-column: 5;
+    grid-row: 2;
+    font-size: 2rem;
+
+}
+
+#i1,
+#ti1,
+#ci1 {
+    grid-column: 14;
+    grid-row: 5;
+    font-size: 2rem;
+}
+
+#i2,
+#ti2,
+#ci2 {
+    grid-column: 16;
+    grid-row: 8;
+    font-size: 2rem;
+}
+
+#i3,
+#ti3,
+#ci3 {
+    grid-column: 17;
+    grid-row: 11/13;
+    font-size: 2rem;
+}
+
+#i4,
+#ti4,
+#ci4 {
+    grid-column: 16;
+    grid-row: 14;
+    font-size: 2rem;
+}
+
+#i5,
+#ti5,
+#ci5 {
+    grid-column: 14;
+    grid-row: 16;
+    font-size: 2rem;
+}
+
+#i6,
+#ti6,
+#ci6 {
+    grid-column: 10/12;
+    grid-row: 17/19;
+    font-size: 1.8rem;
+}
+
+#i7,
+#ti7,
+#ci7 {
+    grid-column: 7;
+    grid-row: 16;
+    font-size: 2rem;
+}
+
+#i8,
+#ti8,
+#ci8 {
+    grid-column: 5;
+    grid-row: 14;
+    font-size: 2rem;
+}
+
+#i9,
+#ti9,
+#ci9 {
+    grid-column: 4;
+    grid-row: 11;
+    font-size: 2rem;
+}
+
+#i10,
+#ti10,
+#ci10 {
+    grid-column: 5;
+    grid-row: 8;
+    font-size: 2rem;
+}
+
+#i11,
+#ti11,
+#ci11 {
+    grid-column: 7;
+    grid-row: 5;
+    font-size: 2rem;
+}
+
+#i12,
+#ti12,
+#ci12 {
+    grid-column: 10;
+    grid-row: 4;
+    font-size: 2rem;
+}
+
+.i1,
+.ti1,
+.ci1 {
+    grid-column: 13/span 2;
+    grid-row: 5;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.i2,
+.ti2,
+.ci2 {
+    grid-column: 15/span 2;
+    grid-row: 8;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.i3,
+.ti3,
+.ci3 {
+    grid-column: 16/span 2;
+    grid-row: 11/13;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.i4,
+.ti4,
+.ci4 {
+    grid-column: 15/span 2;
+    grid-row: 14/span 2;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.i5,
+.ti5,
+.ci5 {
+    grid-column: 13/span 2;
+    grid-row: 16/span 2;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.i6,
+.ti6,
+.ci6 {
+    grid-column: 10/12;
+    grid-row: 17/19;
+    font-size: 1.8rem;
+}
+
+.i7,
+.ti7,
+.ci7 {
+    grid-column: 7;
+    grid-row: 16;
+    font-size: 2rem;
+}
+
+.i8,
+.ti8,
+.ci8 {
+    grid-column: 4/span 2;
+    grid-row: 14;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.i9,
+.ti9,
+.ci9 {
+    grid-column: 4;
+    grid-row: 11;
+    font-size: 2rem;
+
+}
+
+.i10,
+.ti10,
+.ci10 {
+    grid-column: 5;
+    grid-row: 8;
+    font-size: 2rem;
+}
+
+.i11,
+.ti11,
+.ci11 {
+    grid-column: 7;
+    grid-row: 5;
+    font-size: 2rem;
+}
+
+.i12,
+.ti12,
+.ci12 {
+    grid-column: 10;
+    grid-row: 4;
+    font-size: 2rem;
 }

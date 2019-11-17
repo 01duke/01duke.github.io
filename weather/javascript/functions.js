@@ -4,26 +4,20 @@ console.log('My javascript is being read.');
 var pageNav = document.querySelector('#page-nav');
 var statusContainer = document.querySelector('#status');
 var contentContainer = document.querySelector('#main-content');
-// Setup localStorage
 var locStore = window.localStorage;
-// Setup sessionStorage
 var sessStore = window.sessionStorage;
 
-// Listen for the DOM to finish building
 document.addEventListener("DOMContentLoaded", function () {
     buildModDate();
 
     //variables for 3 DOM structures
 
-
-
-
     // variables for wind chill function
     //let temp = 31;
     //let speed = 20;
     //buildWC(speed, temp);
-    let weather = "rain";
-    console.log(weather);//checks to see if it reads the function
+    // let weather = "rain";
+    // console.log(weather);//checks to see if it reads the function
 
     // The time indictor function
     //let hour="9";
@@ -31,12 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
     //timeBall(hour);
 
     // Changes the backgorund image
-    changeSummaryImage(weather);
+    // changeSummaryImage(weather);
 
     //Get weather json data
     let weatherURL = "/weather/javascript/idahoweather.json";
     fetchWeatherData(weatherURL);
-})
+});
 
 
 // Handles small screen menu
@@ -81,17 +75,22 @@ function buildModDate() {
 
     todayDate.innerHTML = n + ", " + fullDay.getDate() + " " + m + " " + fullDay.getFullYear();
 }
+// function buildModDate(){
+//  const dayArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+//  const monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+//  let lastMod = new Date(document.lastModified);
+//  const dayName = dayArray[lastMod.getDay()];
+//  const monthName = monthArray[lastMod.getMonth()];
+//  const formattedDate = dayName+", "+lastMod.getDate() +" "+monthName+", "+lastMod.getFullYear();
+//  document.querySelector('#modDate').innerText = formattedDate;
+// }
 
-
-//wind chill
-
+// ************* wind chill **************************
 function buildWC(speed, temp) {
     let feelTemp = document.getElementById('feels');
     let highTemp = document.getElementById('high');
     let lowTemp = document.getElementById('low');
-    let currentTemp = document.getElementById('current');
-    //let windSpeed = document.getElementById('wind');
-    //let windGusts = document.getElementById('gusts');
+    let currentTemp = document.getElementById('current');;
     // Compute the windchill
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
     console.log(wc);
@@ -108,11 +107,8 @@ function buildWC(speed, temp) {
     let high = temp + 15;
     let low = temp - 12;
     feelTemp.innerHTML = wc;
-    //highTemp.innerHTML = high + '&#176;';
-    lowTemp.innerHTML = low + '&#176;';
+    lowTemp.innerHTML = low + '&#176;' + 'F' ;
     currentTemp.innerHTML = temp + '&#176;' + 'F';
-    //windSpeed.innerHTML =  speed + 'mph      ';
-    //windGusts.innerHTML = 'Gusts: ' + (speed + 5) + 'mph';
 
 }
 
@@ -121,7 +117,6 @@ function timeBall(hour) {
     // Find all "ball" classes and remove them
     let x = document.querySelectorAll(".ball");
     for (let item of x) {
-        console.log(item);
         item.classList.remove("ball");
     }
 
@@ -138,7 +133,6 @@ function changeSummaryImage(weather) {
     // gets the weather-section Id
     let x = document.getElementById('weather-section');
 
-    // this changes everything entered into lowercase
     weather = weather.toLowerCase();
 
     // adds the class name to change the backgorund image
@@ -166,7 +160,7 @@ function changeSummaryImage(weather) {
 *  Fetch Weather Data
 ************************************* */
 function fetchWeatherData(weatherURL) {
-    let cityName = 'Preston'; // The data we want from the weather.json file
+    let cityName = contentHeading.dataset.page; // The data we want from the weather.json file
     fetch(weatherURL)
         .then(function (response) {
             if (response.ok) {
@@ -212,7 +206,6 @@ function fetchWeatherData(weatherURL) {
 
             const lowTemp = p.properties.relativeLocation.properties.lowTemp;
             sessStore.setItem("lowTemp", lowTemp);
-            //locStore.setItem("Preston,ID", prestonData);
 
             // Get the wind data 
             const windSpeed = p.properties.relativeLocation.properties.windSpeed;
@@ -333,14 +326,14 @@ function buildPage() {
 
     // **********  Set the current conditions information  **********
     // Set the temperature information
-    let highTemp = document.querySelector('#high');
+    let higTemp = document.querySelector('#high');
     let loTemp = document.querySelector('#low');
     let currentTemp = document.querySelector('#current');
     //let feelTemp = document.querySelector('#feels');
 
-    highTemp.innerHTML = sessStore.getItem('highTemp') + "°F";
+    higTemp.innerHTML = sessStore.getItem('highTemp') + "°F";
     loTemp.innerHTML = sessStore.getItem('lowTemp') + "°F";
-    currentTemp.innerHTML = sessStore.getItem('temperature') + "°F";
+    currentTemp.innerHTML = sessStore.getItem('temperature') + "°F"
     // Set the wind information
     let speed = document.querySelector('#wind');
     let gust = document.querySelector('#gusts');
@@ -442,7 +435,6 @@ function buildPage() {
     //gets short forcast name to pass to changeSummaryImage
     let shortForecast = sessStore.getItem('shortForecast');
     let weather = getShortForecast(shortForecast);
-    console.log(shortForecast);
     changeSummaryImage(weather);
 
     // Change the status of the containers

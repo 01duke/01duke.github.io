@@ -8,14 +8,14 @@
     nav a {
         text-align: center;
         color: white;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-decoration: none;
 
     }
 
     nav {
         margin: 0;
-        background-color:#001f54 ;
+        background-color: #001f54;
         position: relative;
     }
 
@@ -47,42 +47,41 @@
     }
 
     main {
-        margin: 0% 10% 0% 10%;
+        margin: auto;
+        max-width: 1600px;
     }
 
     #wind {
-        grid-column: 9/span 11;
+        grid-column: 9/11;
     }
 
-    .weather-temp {
-        width: 80%;
-
-
+    #gusts {
+        grid-column: 16/18;
     }
 
     .weatherHeader {
-        width: 80%;
+        width: 100%;
 
     }
 
     .clear {
-        background-image: url("img/clear.jpg");
+        background-image: url("/weather/images/img/clear.jpg");
     }
 
     .rain {
-        background-image: url("img/rain.jpg");
+        background-image: url("/weather/images/img/rain.jpg");
     }
 
     .fog {
-        background-image: url("img/fog.jpg");
+        background-image: url("/weather/images/img/fog.jpg");
     }
 
     .snow {
-        background-image: url("img/snow.jpg");
+        background-image: url("/weather/images/img/snow.jpg");
     }
 
     .clouds {
-        background-image: url("img/clouds.jpg");
+        background-image: url("/weather/images/img/clouds.jpg");
     }
 
 

@@ -1,7 +1,5 @@
-<!--https://codepen.io/joeyb80/pen/qBBqdKd-->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
@@ -11,7 +9,7 @@
   <link href="../css/preston-medium.css" rel="stylesheet" media="screen">
   <link href="../css/preston-large.css" rel="stylesheet" media="screen">
   <link type="text/css" rel="stylesheet" href="/weather/css/font/weather-icons.min.css">
-  <title id="page-title"> | Preston Weather</title>
+  <title id="page-title"> | Duke's Weather</title>
 </head>
 
 <header>
@@ -43,8 +41,8 @@
 <main id="main-content" class="hide">
 
 
-  <h2 id = "contentHeading" data-page="Preston">?</h2>
-  <p id = "latLon" data-coordinates="Preston">?</p>
+  <h2 id="contentHeading" data-page="Preston">?</h2>
+  <p id="latLon" data-coordinates="Preston">?</p>
 
   <section id="weather-section">
     <div class="weatherHeader">
@@ -56,9 +54,9 @@
       <p id="gusts">??</p>
 
     </div>
-    <div class="container">
-      <h3 class="precipTitle">Wind</h3>
-      <div class="precipitation">
+    <div class="weather-container">
+      <h3 class="weather-title">Wind</h3>
+      <div class="wind">
         <!-- oustside -->
         <div id="o1">??</div>
         <div id="o2">??</div>
@@ -73,7 +71,7 @@
         <div id="o11">??</div>
         <div id="o12">??</div>
 
-        <div id="mid">MPH</div>
+        <div id="wmid">MPH</div>
         <!-- inside -->
         <div class="i1 ball">1</div>
         <div class="i2 ball">2</div>
@@ -90,23 +88,23 @@
         <div id="circle"></div>
       </div>
     </div>
-    <div class="container">
-      <h3 class="precipTitle">Temperatures</h3>
+    <div class="weather-container">
+      <h3 class="weather-title">Temperatures</h3>
       <div class="temperatures">
 
         <!-- outside -->
-        <div id="to1">??&#176;</div>
-        <div id="to2">??&#176;</div>
-        <div id="to3">??&#176;</div>
-        <div id="to4">??&#176;</div>
-        <div id="to5">??&#176;</div>
-        <div id="to6">??&#176;</div>
-        <div id="to7">??&#176;</div>
-        <div id="to8">??&#176;</div>
-        <div id="to9">??&#176;</div>
-        <div id="to10">??&#176;</div>
-        <div id="to11">??&#176;</div>
-        <div id="to12">??&#176;</div>
+        <div id="to1">??</div>
+        <div id="to2">??</div>
+        <div id="to3">??</div>
+        <div id="to4">??</div>
+        <div id="to5">??</div>
+        <div id="to6">??</div>
+        <div id="to7">??</div>
+        <div id="to8">??</div>
+        <div id="to9">??</div>
+        <div id="to10">??</div>
+        <div id="to11">??</div>
+        <div id="to12">??</div>
 
         <div id="tmid">&#8457;</div>
         <!-- inside -->
@@ -126,8 +124,8 @@
 
       </div>
     </div>
-    <div class="container">
-      <h3 class="precipTitle">Conditions</h3>
+    <div class="weather-container">
+      <h3 class="weather-title">Conditions</h3>
       <div class="conditions">
         <!-- outside -->
         <div id="co1">??</div>
@@ -143,7 +141,7 @@
         <div id="co11">??</div>
         <div id="co12">??</div>
         <!-- inside -->
-         <div id="cmid"><i class="wi wi-umbrella"></i> </div>
+        <div id="cmid"><i class="wi wi-umbrella"></i> </div>
         <div class="i1 ball">1</div>
         <div class="i2 ball">2</div>
         <div class="i3 ball">3</div>
@@ -159,7 +157,7 @@
         <div id="ccircle"></div>
       </div>
     </div>
-    
+
   </section>
 
   <footer>
