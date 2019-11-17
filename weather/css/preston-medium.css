@@ -2,6 +2,7 @@
 
     header {
         font-size: 2rem;
+        clear: left;  
 
     }
 
@@ -15,7 +16,7 @@
 
     nav {
         margin: 0;
-        background-color: #001f54;
+        background-color: #110E0E;
         position: relative;
     }
 
@@ -32,10 +33,9 @@
         display: none;
     }
 
-
-
     header img {
         float: left;
+        width: 12rem;
     }
 
     #weather-section {

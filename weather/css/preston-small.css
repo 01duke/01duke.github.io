@@ -97,20 +97,23 @@ p {
     margin: 0;
     color: #00bbfa;
     font-size: 2rem;
+    text-align: center;
 }
 
 h2 {
     margin: 0;
     color: #00bbfa;
-    font-size: 4rem;
+    font-size: 4.5em;
+    text-align: center;
 }
-
-footer {
+footer,
+footer p{
     position: relative;
     bottom: 0;
     background-color: #110e0e;
     color: #00bbfa;
     text-align: center;
+    font-size:1.1em ;
 }
 
 
