@@ -203,66 +203,63 @@ function changeSummaryImage(weather) {
   // gets the section Id
   let x = document.getElementById("section");
 
-  // this changes everything entered into lowercase
-  weather = weather.toLowerCase();
-
   // adds the class name to change the backgorund image
   console.log(weather);
   switch (weather) {
     case "clear":
-      x.className += "clear";
+      x.className += 'clear';
       break;
     case "rain":
-      x.className += "rain";
+      x.className += 'rain';
       break;
     case "fog":
-      x.className += "fog";
+      x.className += 'fog';
       break;
     case "snow":
-      x.className += "snow";
+      x.className += 'snow';
       break;
     case "clouds":
-      x.className += "clouds";
+      x.className += 'clouds';
       break;
   }
 }
 
-function buildPage()  {
+function buildPage() {
   // Set the title with the location name at the first
-   // Gets the title element so it can be worked with
-   let pageTitle = document.querySelector('#page-title');
-   // Create a text node containing the full name 
-   let fullNameNode = document.createTextNode(sessStore.getItem('fullName'));
-   // inserts the fullName value before any other content that might exist
-   pageTitle.insertBefore(fullNameNode, pageTitle.childNodes[0]);
-   // When this is done the title should look something like this:
-   // Preston, Idaho | The Weather Site
-  
-    // Get the h1 to display the city location
-    let contentHeading = document.querySelector('#contentHeading');
-    contentHeading.innerHTML = sessStore.getItem('fullName');
-    // The h1 in the main element should now say "Preston, Idaho"
-  
-    // Get the coordinates container for the location
-    let latlon = document.querySelector('#latLon');
-    latLon.innerHTML = sessStore.getItem('latLong');
-    // The latitude and longitude should match what was stored in session storage.
-  
-    // Get the condition keyword and set Background picture
+  // Gets the title element so it can be worked with
+  let pageTitle = document.querySelector('#page-title');
+  // Create a text node containing the full name 
+  let fullNameNode = document.createTextNode(sessStore.getItem('fullName'));
+  // inserts the fullName value before any other content that might exist
+  pageTitle.insertBefore(fullNameNode, pageTitle.childNodes[0]);
+  // When this is done the title should look something like this:
+  // Preston, Idaho | The Weather Site
+
+  // Get the h1 to display the city location
+  let contentHeading = document.querySelector('#contentHeading');
+  contentHeading.innerHTML = sessStore.getItem('fullName');
+  // The h1 in the main element should now say "Preston, Idaho"
+
+  // Get the coordinates container for the location
+  let latlon = document.querySelector('#latLon');
+  latLon.innerHTML = sessStore.getItem('latLong');
+  // The latitude and longitude should match what was stored in session storage.
+
+  // Get the condition keyword and set Background picture
   changeSummaryImage(sessStore.getItem('shortForecast'));
   /* Keep in mind that the value may be different than 
   what you need for your CSS to replace the image. You 
   may need to make some adaptations for it to work.*/
-  
+
   // **********  Set the current conditions information  **********
   // Set the temperature information
   let highTemp = document.querySelector('#high');
   let loTemp = document.querySelector('#low');
   let currentTemp = document.querySelector('#current');
   //let feelTemp = document.querySelector('#feels');
-  
+
   highTemp.innerHTML = sessStore.getItem('highTemp') + "°F";
-  loTemp.innerHTML = sessStore.getItem('lowTemp') + "°F"; 
+  loTemp.innerHTML = sessStore.getItem('lowTemp') + "°F";
   currentTemp.innerHTML = sessStore.getItem('temperature') + "°F";
   // Set the wind information
   let speed = document.querySelector('#wind');
@@ -275,51 +272,51 @@ function buildPage()  {
   console.log(sessStore.getItem('temperature'));
   //feelTemp.innerHTML = 
   buildWC(sessStore.getItem('WindSpeed'), sessStore.getItem('temperature'));
-  
+
   // **********  Set the Time Indicators  **********
   let thisDate = new Date();
   var currentHour = thisDate.getHours();
   let indicatorHour;
   // If hour is greater than 12, subtract 12
   if (currentHour > 12) {
-   indicatorHour = currentHour - 12;
+    indicatorHour = currentHour - 12;
   } else {
-   indicatorHour = currentHour;
+    indicatorHour = currentHour;
   };
   console.log(`Current hour in time indicator is: ${currentHour}`);
   // Set the time indicator
   timeBall(indicatorHour);
-  
+
   // ********** Hourly Temperature Component  **********
   // Get the hourly data from storage as an array
   let currentData = [];
   let tempHour = currentHour;
   // Adjust counter based on current time
   for (let i = 0, x = 12; i < x; i++) {
-   if (tempHour <= 23) {
-    currentData[i] = sessStore.getItem('hour' + tempHour).split(",");
-    tempHour++;
-   } else {
-    tempHour = tempHour - 12;
-    currentData[i] = sessStore.getItem('hour' + tempHour).split(",");
-    console.log(`CurrentData[i][0] is: ${currentData[i][0]}`);
-    tempHour = 1;
-   }
+    if (tempHour <= 23) {
+      currentData[i] = sessStore.getItem('hour' + tempHour).split(",");
+      tempHour++;
+    } else {
+      tempHour = tempHour - 12;
+      currentData[i] = sessStore.getItem('hour' + tempHour).split(",");
+      console.log(`CurrentData[i][0] is: ${currentData[i][0]}`);
+      tempHour = 1;
+    }
   }
   console.log(currentData);
-  
+
   // Loop through array inserting data
   // Start with the outer container that matchs the current time
   tempHour = currentHour + 1;
   for (let i = 0, x = 12; i < x; i++) {
-   if (tempHour >= 13) {
-    tempHour = tempHour - 12;
-   }
-   console.log(`Start container is: #temps o.${tempHour}`);
-   document.querySelector('#to' + tempHour).innerHTML = currentData[i][0];    //QUESTION, WHAT DOES THE MONEY SIGN MEAN? IS IT DOCUMENT.QUERYSELECTOR????????
-   tempHour++;
+    if (tempHour >= 13) {
+      tempHour = tempHour - 12;
+    }
+    console.log(`Start container is: #temps o.${tempHour}`);
+    document.querySelector('#to' + tempHour).innerHTML = currentData[i][0];    //QUESTION, WHAT DOES THE MONEY SIGN MEAN? IS IT DOCUMENT.QUERYSELECTOR????????
+    tempHour++;
   }
-  
+
   console.log(currentHour);
   // ********** Hourly Wind Component  **********
   // Get the hourly data from storage
@@ -328,43 +325,42 @@ function buildPage()  {
   console.log(windHour);
   // Adjust counter based on current time
   for (let i = 0, x = 12; i < x; i++) {
-   if (windHour <= 23) {
-    windArray[i] = currentData[i][1].split(" ");
-    console.log(`windArray[i] is: ${windArray[i]}`);
-    windHour++;
-   } else {
-    windHour = windHour - 12;
-    windArray[i] = currentData[i][1].split(" ");
-    windHour = 1;
-   }
+    if (windHour <= 23) {
+      windArray[i] = currentData[i][1].split(" ");
+      console.log(`windArray[i] is: ${windArray[i]}`);
+      windHour++;
+    } else {
+      windHour = windHour - 12;
+      windArray[i] = currentData[i][1].split(" ");
+      windHour = 1;
+    }
   }
   console.log(windArray);
-  
+
   // Insert Wind data
   // Start with the outer container that matchs the time indicator
   windHour = currentHour + 1;
   for (let i = 0, x = 12; i < x; i++) {
-   if (windHour >= 13) {
-    windHour = windHour - 12;
-   }
-   document.querySelector('#o' + windHour).innerHTML = windArray[i][0];
-   windHour++;
+    if (windHour >= 13) {
+      windHour = windHour - 12;
+    }
+    document.querySelector('#o' + windHour).innerHTML = windArray[i][0];
+    windHour++;
   }
-  
-  
+
+
   // **********  Condition Component Icons  **********
   let conditionHour = currentHour + 1;
   // Adjust counter based on current time
   for (let i = 0, x = 12; i < x; i++) {
-   if (conditionHour >= 13) {
-    conditionHour = conditionHour - 12;
-   }
-   document.querySelector('#o' + conditionHour).innerHTML = '<img src="' + currentData[i][2] + '" alt="hourly weather condition image">';
-   conditionHour++;
+    if (conditionHour >= 13) {
+      conditionHour = conditionHour - 12;
+    }
+    document.querySelector('#o' + conditionHour).innerHTML = '<img src="' + currentData[i][2] + '" alt="hourly weather condition image">';
+    conditionHour++;
   }
-  
+
   // Change the status of the containers
   contentContainer.setAttribute('class', ''); // removes the hide class from main
   statusContainer.setAttribute('class', 'hide'); // hides the status container
-  }
-  
+}
