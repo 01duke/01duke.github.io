@@ -103,7 +103,7 @@ function buildWC(speed, temp) {
     // Display the windchill
     console.log(wc);
 
-    wc = 'Fells like ' + wc + '&#176;' + 'F';
+    wc = 'Feels like ' + wc + '&#176;' + 'F';
     let high = temp + 15;
     let low = temp - 12;
     feelTemp.innerHTML = wc;

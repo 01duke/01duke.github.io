@@ -125,7 +125,6 @@ section img {
 .weatherHeader {
     border-style: solid;
     border-color: #00bbfa;
-    border-radius: 1rem;
     display: grid;
     grid-template-columns: repeat(27, 1fr);
     grid-template-rows: repeat(1fr);
@@ -136,7 +135,7 @@ section img {
 
 #current {
     text-align: center;
-    font-size: 6rem;
+    font-size: 4rem;
     grid-column: 9/span 10;
     grid-row: 4/span 5;
 }
@@ -145,7 +144,7 @@ section img {
     text-align: center;
     grid-column: 9/span 10;
     grid-row: 8/span 9;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 #high {
@@ -153,7 +152,7 @@ section img {
     grid-column: 3/span 4;
     grid-row: 5/span 6;
     color: #ffaa00;
-    font-size: 2.8rem;
+    font-size: 2rem;
 }
 
 #low {
@@ -161,7 +160,7 @@ section img {
     grid-column: 20/span 21;
     grid-row: 5/span 6;
     color: #00ffff;
-    font-size: 2.8rem;
+    font-size: 2rem;
 }
 
 #gusts {
@@ -213,7 +212,7 @@ section img {
     display: flex;
     flex-direction: column;
     border-style: solid;
-    border-radius: 1rem;
+    border-radius: 2em;
     margin: .5rem;
     background-color: #110e0ec9;
 }
