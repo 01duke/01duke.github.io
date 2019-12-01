@@ -24,10 +24,10 @@
 
 <nav id="page-nav">
   <button onclick="toggleMenu()">&#9776; Menu</button>
-  <ul id="navigation" class="hide">
-    <li><a href="#">Home</a></li>
-    <li><a href="/weather/locations/preston.html">Preston</a></li>
-    <li class="active"><a href="./sodaSpring.html">Soda Springs</a></li>
+  <ul id="primaryNav" class="hide">
+    <li><a href="index.html">Home</a></li>
+    <li class="active"><a href="#">Preston</a></li>
+    <li><a href="./sodaSpring.html">Soda Springs</a></li>
     <li><a href="#">Fish Haven</a></li>
     <li><a href="#">Storm Center</a></li>
     <li><a href="#">Gallery</a></li>
@@ -41,11 +41,11 @@
 <main id="main-content" class="hide">
 
 
-  <h2 id = "contentHeading" data-page="Soda Springs">?</h2>
-  <p id = "latLon" data-coordinates="Soda Springs">?</p>
+  <h2 id="contentHeading" data-page="Soda Springs">?</h2>
+  <p id="latLon" data-coordinates="Soda Springs">?</p>
 
   <section id="weather-section">
-    <div class="weatherHeader">
+    <div class="weatherHeading">
       <p id="high">??</p>
       <p id="low">??</p>
       <p id="current">??</p>
@@ -141,7 +141,7 @@
         <div id="co11">??</div>
         <div id="co12">??</div>
         <!-- inside -->
-         <div id="cmid"><i class="wi wi-umbrella"></i> </div>
+        <div id="cmid"><i class="wi wi-umbrella"></i> </div>
         <div class="i1 ball">1</div>
         <div class="i2 ball">2</div>
         <div class="i3 ball">3</div>
@@ -157,12 +157,12 @@
         <div id="ccircle"></div>
       </div>
     </div>
-    
+
   </section>
 
   <footer>
     2020© | Shane Duke |<div class="dateMod"><span id="todaysDate"></span>
-      <script src="/weather/javascript/functions.js"></script>
+      <script src="/weather/javascript/functions.min.js"></script>
 
     </div>
   </footer>

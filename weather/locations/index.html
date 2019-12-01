@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/small.css" rel="stylesheet" media="screen">
+    <link href="../css/medium.css" rel="stylesheet" media="screen">
+    <link href="../css/large.css" rel="stylesheet" media="screen">
+    <link type="text/css" rel="stylesheet" href="/weather/css/font/weather-icons.min.css">
+    <title id="page-title"> | Duke's Weather</title>
+</head>
+
+<header>
+
+    <img src="../images/weather_channel_icon.png" alt="weather image">
+    <section class="headings">
+        <h1>Duke's Weather</h1>
+        <p>can't out run the weather</p>
+    </section>
+
+</header>
+
+<nav id="page-nav">
+    <button onclick="toggleMenu()">&#9776; Menu</button>
+    <ul id="primaryNav" class="hide">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="./preston.html">Preston</a></li>
+        <li><a href="./sodaSpring.html">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+    </ul>
+</nav>
+
+
+<section id="status">Getting weather information</section>
+
+
+<main id="main-content" class="hide">
+
+
+    <h2 id="contentHeading">?</h2>
+    <p id="latLon">?</p>
+    <p id="elevation">?</p>
+
+
+    <section id="weather-section">
+        <div class="weatherHeading">
+            <p id="high">??</p>
+            <p id="low">??</p>
+            <p id="current">??</p>
+            <p id="feels">??</p>
+            <p id="wind">??</p>
+            <p id="gusts">??</p>
+
+        </div>
+        <div class="weather-container">
+            <h3 class="weather-title">Wind</h3>
+            <div class="wind">
+                <!-- oustside -->
+                <div id="o1">??</div>
+                <div id="o2">??</div>
+                <div id="o3">??</div>
+                <div id="o4">??</div>
+                <div id="o5">??</div>
+                <div id="o6">??</div>
+                <div id="o7">??</div>
+                <div id="o8">??</div>
+                <div id="o9">??</div>
+                <div id="o10">??</div>
+                <div id="o11">??</div>
+                <div id="o12">??</div>
+
+                <div id="wmid">MPH</div>
+                <!-- inside -->
+                <div class="i1 ball">1</div>
+                <div class="i2 ball">2</div>
+                <div class="i3 ball">3</div>
+                <div class="i4 ball">4</div>
+                <div class="i5 ball">5</div>
+                <div class="i6 ball">6</div>
+                <div class="i7 ball">7</div>
+                <div class="i8 ball">8</div>
+                <div class="i9 ball">9</div>
+                <div class="i10 ball">10</div>
+                <div class="i11 ball">11</div>
+                <div class="i12 ball">12</div>
+                <div id="circle"></div>
+            </div>
+        </div>
+        <div class="weather-container">
+            <h3 class="weather-title">Temperatures</h3>
+            <div class="temperatures">
+
+                <!-- outside -->
+                <div id="to1">??</div>
+                <div id="to2">??</div>
+                <div id="to3">??</div>
+                <div id="to4">??</div>
+                <div id="to5">??</div>
+                <div id="to6">??</div>
+                <div id="to7">??</div>
+                <div id="to8">??</div>
+                <div id="to9">??</div>
+                <div id="to10">??</div>
+                <div id="to11">??</div>
+                <div id="to12">??</div>
+
+                <div id="tmid">&#8457;</div>
+                <!-- inside -->
+                <div class="i1 ball">1</div>
+                <div class="i2 ball">2</div>
+                <div class="i3 ball">3</div>
+                <div class="i4 ball">4</div>
+                <div class="i5 ball">5</div>
+                <div class="i6 ball">6</div>
+                <div class="i7 ball">7</div>
+                <div class="i8 ball">8</div>
+                <div class="i9 ball">9</div>
+                <div class="i10 ball">10</div>
+                <div class="i11 ball">11</div>
+                <div class="i12 ball">12</div>
+                <div id="tcircle"></div>
+
+            </div>
+        </div>
+        <div class="weather-container">
+            <h3 class="weather-title">Conditions</h3>
+            <div class="conditions">
+                <!-- outside -->
+                <div id="co1">??</div>
+                <div id="co2">??</div>
+                <div id="co3">??</div>
+                <div id="co4">??</div>
+                <div id="co5">??</div>
+                <div id="co6">??</div>
+                <div id="co7">??</div>
+                <div id="co8">??</div>
+                <div id="co9">??</div>
+                <div id="co10">??</div>
+                <div id="co11">??</div>
+                <div id="co12">??</div>
+                <!-- inside -->
+                <div id="cmid"><i class="wi wi-umbrella"></i> </div>
+                <div class="i1 ball">1</div>
+                <div class="i2 ball">2</div>
+                <div class="i3 ball">3</div>
+                <div class="i4 ball">4</div>
+                <div class="i5 ball">5</div>
+                <div class="i6 ball">6</div>
+                <div class="i7 ball">7</div>
+                <div class="i8 ball">8</div>
+                <div class="i9 ball">9</div>
+                <div class="i10 ball">10</div>
+                <div class="i11 ball">11</div>
+                <div class="i12 ball">12</div>
+                <div id="ccircle"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="dateMod"><span id="todaysDate"></span>
+            <script src="/weather/javascript/functions.js"></script>
+            <script src="/weather/javascript/geo_loc.js"></script>
+
+        </div>
+        <p> 2020© | Shane Duke </p>
+    </footer>
+
+</main>
+
+</html>

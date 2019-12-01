@@ -122,7 +122,7 @@ section img {
     width: 100%;
 }
 
-.weatherHeader {
+.weatherHeading {
     border-style: solid;
     border-color: #00bbfa;
     display: grid;

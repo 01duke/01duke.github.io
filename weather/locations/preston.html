@@ -24,14 +24,14 @@
 
 <nav id="page-nav">
   <button onclick="toggleMenu()">&#9776; Menu</button>
-  <ul id="navigation" class="hide">
-    <li><a href="#">Home</a></li>
-    <li class="active"><a href="/weather/locations/preston.html">Preston</a></li>
-    <li><a href="./sodaSpring.html">Soda Springs</a></li>
-    <li><a href="#">Fish Haven</a></li>
-    <li><a href="#">Storm Center</a></li>
-    <li><a href="#">Gallery</a></li>
-  </ul>
+<ul id="primaryNav" class="hide">
+  <li><a href="index.html">Home</a></li>
+  <li class="active"><a href="#">Preston</a></li>
+  <li><a href="./sodaSpring.html">Soda Springs</a></li>
+  <li><a href="#">Fish Haven</a></li>
+  <li><a href="#">Storm Center</a></li>
+  <li><a href="#">Gallery</a></li>
+</ul>
 </nav>
 
 
@@ -45,7 +45,7 @@
   <p id="latLon" data-coordinates="Preston">?</p>
 
   <section id="weather-section">
-    <div class="weatherHeader">
+    <div class="weatherHeading">
       <p id="high">??</p>
       <p id="low">??</p>
       <p id="current">??</p>
@@ -162,7 +162,7 @@
 
   <footer>
     <div class="dateMod"><span id="todaysDate"></span>
-      <script src="/weather/javascript/functions.js"></script>
+      <script src="/weather/javascript/functions.min.js"></script>
     </div>
     <p> 2020© | Shane Duke </p>
   </footer>
