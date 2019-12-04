@@ -59,7 +59,7 @@ nav button {
 
 a {
     border-style: double;
-    padding: 10;
+    padding: 10px;
 }
 
 nav ul li a {
@@ -127,7 +127,6 @@ section img {
     border-color: #00bbfa;
     display: grid;
     grid-template-columns: repeat(27, 1fr);
-    grid-template-rows: repeat(1fr);
     justify-content: center;
     margin: .5rem;
     background-color: #110e0ec9
