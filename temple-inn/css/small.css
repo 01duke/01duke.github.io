@@ -1,0 +1,55 @@
+
+@import "/css/normalize.css";
+
+/* colors*/
+/*yellow ffffa8*/
+/*gray d7d7d7*/
+/*purple 37206e*/
+
+
+html{
+    background-color: #d7d7d7;
+    color: #37206e ;
+}
+body{
+    margin: auto;
+    max-width: 90em;
+}
+    
+nav a {
+    text-align: center;
+    color: #000;
+    font-size: 1.3em;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+nav {
+    background-color: #ffffa8;
+    position: relative;
+    margin: 0 0 0 0px;
+    width: 100%;
+    padding: 10px ;
+}
+
+nav ul li {
+    flex: 1;
+}
+nav ul li.active a {
+    background-color: #ffffa8;
+    color: #37206e;
+}
+
+nav ul li a:hover {
+    background-color: #ffffa8;
+    color: #000;
+}
+nav ul {
+    display: flex;
+}
+li {
+    list-style-type: none;
+    margin: 0;
+}
