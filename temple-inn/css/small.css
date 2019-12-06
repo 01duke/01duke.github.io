@@ -15,11 +15,17 @@ body{
     margin: auto;
     max-width: 90em;
 }
+#title{
+    font-size: 2em;
+    text-align: center;
+    background-color: #ffffa8;
+    color: #000;
+}
     
 nav a {
     text-align: center;
     color: #000;
-    font-size: 1.3em;
+    font-size: 1em;
     text-decoration: none;
     list-style-type: none;
     padding: 10px;
@@ -43,13 +49,22 @@ nav ul li.active a {
 }
 
 nav ul li a:hover {
-    background-color: #ffffa8;
+    background-color: #d7d7d7;
     color: #000;
 }
 nav ul {
     display: flex;
+    padding: 0 0 0 0;
 }
 li {
     list-style-type: none;
     margin: 0;
+    color: #37206e;
+}
+footer{
+    text-align: center;
+    color: #37206e;
+}
+footer p {
+    margin: 0 0 0 0;
 }
