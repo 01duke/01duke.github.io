@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/temple-inn/css/small.css" rel="stylesheet" media="screen">
+    <link href="/temple-inn/css/large.css" rel="stylesheet" media="screen">
+    <title>Temple Inn</title>
+</head>
+
+<body>
+    <header>
+        <img src="/temple-inn/images/temple.png" alt="temple-inn icon" width="150px">
+
+        <div id="title">Temple Inn</div>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/temple-inn/index.html">Home</a></li>
+            <li><a href="/temple-inn/temple.html">Temple</a></li>
+            <li><a href="/temple-inn/reservation.html">Reservation</a></li>
+            <li><a href="/temple-inn/services.html">Services</a></li>
+            <li><a href="/temple-inn/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 id="contactUs">Contact Us</h1>
+
+
+    <section id="contactForum">
+
+        <form action="./contacts2.html">
+            First Name:<br>
+            <input type="text" name="firstname" id="firstNameC" style="width: 98%;">
+            <br><br>
+            Last Name:<br>
+            <input type="text" name="lastName" id="lastNameC" style="width: 98%;">
+            <br><br>
+            Email:<br>
+            <input type="text" name="email" id="emailC" style="width: 98%;">
+            <br><br>
+            Phone Number:<br>
+            <input type="text" name="phoneNumber" id="phoneNumberC" style="width: 98%;">
+            <br><br>
+            Location:
+            <br>
+            <select name="location" id="locationC" style="width: 98%;">
+                <option value="select">Select Destination </option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <br><br>
+            Comments:<br>
+            <input type="text" name="commentsC" id="commentsC" style="width: 98%;">
+            <br><br>
+            </select>
+        </form>
+    </section>
+    <input type="submit" value="Submit" onclick="storeContact()" id="submit-button">
+    <br>
+    <br>
+    <section id="mapsSection">
+        <iframe id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370285677!2d-77.09772048431313!3d38.983255949482924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576227788940!5m2!1sen!2sus"
+            allowfullscreen=""></iframe>
+    </section>
+    <form action="./contacts2.html">
+
+    </form>
+
+
+
+</body>
+<footer>
+    <p>© 2019 | Shane Duke | <a href="/temple-inn/attributions.html">Attributions</a> |<a
+            href="/temple-inn/contact.html">Contact Us</a> |
+        <div class="dateMod"><span id="todaysDate"></span>
+            <script src="/temple-inn/js/functions.js"></script>
+        </div>
+    </p>
+
+</footer>
+
+</html>

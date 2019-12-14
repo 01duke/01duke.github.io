@@ -1,10 +1,7 @@
 'use strict';
-console.log('My javascript is being read.');
-document.addEventListener("DOMContentLoaded", function () {
-    buildModDate();
-});
-function buildModDate() {
-    var fullDay = new Date();
+console.log('javascript');
+
+var fullDay = new Date(); {
 
     var weekday = new Array(7);
     weekday[0] = "Sunday";
@@ -32,8 +29,43 @@ function buildModDate() {
 
     var m = month[fullDay.getMonth()];
     var n = weekday[fullDay.getDay()];
-    console.log(`The name of the day is: ${n}`);
     var todayDate = document.getElementById("todaysDate");
 
     todayDate.innerHTML = n + ", " + fullDay.getDate() + " " + m + " " + fullDay.getFullYear();
+}
+
+function toggleMenu() {
+    document.getElementById("navigation").classList.toggle("hide");
+}
+var pageNav = document.querySelector('#page-nav');
+var storage = window.sessionStorage;
+
+function store() {
+    console.log("Im being read");
+    storage.setItem("Temple: ", document.querySelector('#temples').value);
+    storage.setItem("Check in Date: ", document.querySelector('#check-in-date').value);
+    storage.setItem("Check out Date: ", document.querySelector('#check-out-date').value);
+    storage.setItem("Room Style: ", document.querySelector('#roomStyle').value);
+    storage.setItem("Number of Rooms: ", document.querySelector('#numberOfRooms').value);
+    storage.setItem("firstName", document.querySelector('#firstName').value);
+    storage.setItem("Last Name: ", document.querySelector('#lastName').value);
+    storage.setItem("Email: ", document.querySelector('#email').value);
+    storage.setItem("Phone Number: ", document.querySelector('#phone').value);
+    storage.setItem("City: ", document.querySelector('#city').value);
+    storage.setItem("State: ", document.querySelector('#state').value);
+    storage.setItem("Country: ", document.querySelector('#country').value);
+    storage.setItem("Comments: ", document.querySelector('#comments').value);
+}
+
+
+function storeContact() {
+    console.log("Im being read");
+    storage.setItem("firstNameContact: ", document.querySelector('#firstNameC').value);
+    storage.setItem("lastNameContact: ", document.querySelector('#lastNameC').value);
+    storage.setItem("emailContact: ", document.querySelector('#emailC').value);
+    storage.setItem("PhoneNumberContact: ", document.querySelector('#phoneNumberC').value);
+    storage.setItem("LocationContact: ", document.querySelector('#locationC').value);
+    storage.setItem("ReasonForContact: ", document.querySelector('#reasonForContactC').value);
+    storage.setItem("CommentsContact: ", document.querySelector('#commentsC').value);
+
 }

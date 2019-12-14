@@ -1,70 +1,113 @@
-
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Sulphur+Point&display=swap');
 @import "/css/normalize.css";
 
 /* colors*/
 /*yellow ffffa8*/
 /*gray d7d7d7*/
 /*purple 37206e*/
+header #title {
+    font-family: 'Pacifico', cursive;
+}
 
-
-html{
+header {
     background-color: #d7d7d7;
-    color: #37206e ;
-}
-body{
-    margin: auto;
-    max-width: 90em;
-}
-#title{
-    font-size: 2em;
+    color: #37206e;
     text-align: center;
-    background-color: #ffffa8;
-    color: #000;
-}
-    
-nav a {
-    text-align: center;
-    color: #000;
-    font-size: 1em;
-    text-decoration: none;
-    list-style-type: none;
-    padding: 10px;
+    padding: .5rem;
+    overflow: hidden;
+    font-size: 2rem;
+
 }
 
+body {
+    color: #37206e;
+    background-color: #d7d7d7;
+    margin: 0 0 70px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    padding: 0;
+}
 
 nav {
-    background-color: #ffffa8;
-    position: relative;
     margin: 0 0 0 0px;
     width: 100%;
-    padding: 10px ;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
 }
 
-nav ul li {
-    flex: 1;
-}
-nav ul li.active a {
-    background-color: #ffffa8;
+nav ul li a {
+    padding: 1em;
+    text-decoration: none;
     color: #37206e;
 }
 
+
+
 nav ul li a:hover {
-    background-color: #d7d7d7;
-    color: #000;
+    background-color: #001f54;
+    color: #d7d7d7;
+    border-radius: 10em;
 }
-nav ul {
-    display: flex;
-    padding: 0 0 0 0;
-}
+
+
 li {
     list-style-type: none;
     margin: 0;
+    font-size: 1.3em;
     color: #37206e;
+
+
 }
-footer{
-    text-align: center;
-    color: #37206e;
+
+main {
+    margin: 0;
+    background-color: #110e0e;
 }
+
+p {
+    margin: 0;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+    padding: 0 10px 0;
+    font-family: 'Pacifico', cursive;
+}
+
+#map {
+    width: 400px;
+    height: 320px;
+}
+form{
+margin: auto;
+}
+ input {
+    background-color: #ffffa8;
+    border-style: none;
+    max-width: 25em;
+}
+
+select {
+    background-color: #ffffa8;
+    max-width: 25em;
+}
+
+input #submit-button {
+    margin: auto;
+    width: 300px;
+}
+
+footer,
 footer p {
-    margin: 0 0 0 0;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    font-size: 1.1em;
 }
