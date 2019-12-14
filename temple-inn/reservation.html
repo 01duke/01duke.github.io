@@ -27,11 +27,11 @@
         </ul>
     </nav>
     <main>
-        <section class="row">
-            <h2>Stay information</h2>
+            <div id="dest-info">
+            <h1>Destination Information</h1>
             <form action="./reservation-confirm.html">
                 Location:<br>
-                <select name="temples" id="temples" style="width: 98%;">
+                <select name="temples" id="temples" style="width: 95%;">
                     <option id="templeSelect">Select Destination</option>
                     <option value="Boise, Idaho">Boise, Idaho</option>
                     <option value="Idaho Falls, Idaho">Idaho Falls, Idaho</option>
@@ -41,13 +41,13 @@
                 </select>
                 <br><br>
                 Check-in Date:<br>
-                <input type="date" name="in-date" id="in-date" style="width: 98%;">
+                <input type="date" name="in-date" id="in-date" style="width: 95%;">
                 <br><br>
                 Check-out Date:<br>
-                <input type="date" name="out-date" id="out-date" style="width: 98%;">
+                <input type="date" name="out-date" id="out-date" style="width: 95%;">
                 <br><br>
                 Type of Room:<br>
-                <select name="room" id="room" style="width: 98%;">
+                <select name="room" id="room" style="width: 95%;">
                     <option value="roomselect">Select Type of Room...</option>
                     <option value="king">King</option>
                     <option value="queen">Queen</option>
@@ -56,7 +56,7 @@
                 </select>
                 <br><br>
                 Number of Rooms:
-                <select name="#ofrooms" id="numberOfRooms" style="width: 98%;">
+                <select name="rooms" id="rooms" style="width: 95%;">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -64,33 +64,33 @@
                     <option value="5">5</option>
                 </select>
                 </div>
-                <div class="row">
-                    <h2>Guest information</h2>
+                <div >
+                    <h1>Customer Information</h1>
                     First name:<br>
-                    <input type="text" name="firstname" id="firstName" style="width: 98%;">
+                    <input type="text" name="firstname" id="firstName" style="width: 95%;">
                     <br><br>
                     Last name:<br>
-                    <input type="text" name="lastname" id="lastName" style="width: 98%;">
+                    <input type="text" name="lastname" id="lastName" style="width: 95%;">
                     <br><br>
                     Phone Number:<br>
-                    <input type="text" name="phone" id="phone" style="width: 98%;">
+                    <input type="text" name="phone" id="phone" style="width: 95%;">
                     <br><br>
                     Email Address:<br>
-                    <input type="text" name="email" id="email" style="width: 98%;">
+                    <input type="text" name="email" id="email" style="width: 95%;">
                     <br><br>
                     City: <br>
-                    <input type="text" name="city" id="city" style="width: 98%;">
+                    <input type="text" name="city" id="city" style="width: 95%;">
                     <br><br>
                     State: <br>
-                    <input type="text" name="state" id="state" style="width: 98%;">
+                    <input type="text" name="state" id="state" style="width: 95%;">
                     <br><br>
                     Country:<br>
-                    <input type="text" name="country" id="country" style="width: 98%;">
+                    <input type="text" name="country" id="country" style="width: 95%;">
                     <br><br>
                 </div>
             </form>
-            <form action="/temple-inn/reservation-confirm.html">
-                <input type="submit" value="Submit" onclick="store()" id="submitButton">
+            <form action="./reservation-confirm.html">
+                <input type="submit" value="Submit" onclick="storeRes()" id="submitButton">
             </form>
 
 

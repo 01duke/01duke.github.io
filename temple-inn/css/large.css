@@ -102,6 +102,17 @@
         max-width: 0%;
 
     }
+    #res-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #dest-info{
+        grid-column: 2;
+    }
+    #cust-info{
+        grid-column: 1;
+
+    }
 
 
 
