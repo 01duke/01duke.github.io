@@ -5,6 +5,7 @@
         max-width: 49rem;
     }
 
+
     nav ul.hide {
         display: flex;
         justify-content: space-evenly;
@@ -36,6 +37,70 @@
 
     nav ul li {
         display: inline-block;
+    }
+
+    #temple-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto, 8);
+    }
+
+    #boise-info {
+        padding-left: 1.1em;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #boise {
+        grid-column: 1;
+
+        max-width: 0%;
+    }
+
+    #mer-info {
+        padding-left: 1.1em;
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #meridian {
+        padding-left: 5px;
+        max-width: 0%;
+        grid-row: 4;
+    }
+
+    #hrex {
+        grid-row: 5;
+    }
+
+    #rex-info {
+        padding-left: 1.1em;
+        grid-column: 2;
+        grid-row: 6;
+    }
+
+    #rexburg {
+        max-width: 0%;
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    #htwin {
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+    #twin-info {
+        padding-left: 1.1em;
+        grid-column: 1;
+        grid-row: 8;
+    }
+
+    #twin-falls {
+        grid-column: 2;
+        grid-row: 8;
+        max-width: 0%;
+
     }
 
 
