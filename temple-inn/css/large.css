@@ -1,36 +1,43 @@
-@media only screen and (min-width: rem) {
+@media only screen and (min-width: 43rem) {
     body {
         margin: auto;
-        border-style: dotted;
         padding: 1em;
-        max-width: 400px;
+        max-width: 49rem;
     }
-
-    nav a {
-        text-align: center;
-        color: #37206e ;
-        font-size: 1rem;
-        text-decoration: none;
-
-    }
-
-
-    nav {
-        margin: 0 0 0 0;
-        position: relative;
-    }
-
-    nav ul li {
-        flex: 1;
-    }
-
 
     nav ul.hide {
         display: flex;
+        justify-content: space-evenly;
     }
 
     nav button {
         display: none;
     }
+
+    main {
+        margin: 0% 5% 0% 5%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+    }
+
+
+    nav ul li a {
+        color: #37206e;
+        margin: 0 1rem;
+        display: block;
+
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+
 
 }
