@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/temple-inn/css/small.css" rel="stylesheet" media="screen">
+    <link href="/temple-inn/css/large.css" rel="stylesheet" media="screen">
+    <title>Temple Inn</title>
+</head>
+
+<body>
+    <header>
+        <img src="/temple-inn/images/temple.png" alt="temple-inn icon">
+
+        <div id="title">Temple Inn</div>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/temple-inn/index.html">Home</a></li>
+            <li><a href="/temple-inn/temple.html">Temple</a></li>
+            <li><a href="/temple-inn/reservation.html">Reservation</a></li>
+            <li><a href="/temple-inn/services.html">Services</a></li>
+            <li><a href="/temple-inn/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="row">
+            <h2>Stay information</h2>
+            <form action="./reservation-confirm.html">
+                Location:<br>
+                <select name="temples" id="temples" style="width: 98%;">
+                    <option id="templeSelect">Select Destination</option>
+                    <option value="Boise, Idaho">Boise, Idaho</option>
+                    <option value="Idaho Falls, Idaho">Idaho Falls, Idaho</option>
+                    <option value="Meridian, Idaho">Meridian, Idaho</option>
+                    <option value="Rexburg, Idaho">Rexburg, Idaho</option>
+                    <option value="Twin Falls, Idaho">Twin Falls, Idaho</option>
+                </select>
+                <br><br>
+                Check-in Date:<br>
+                <input type="date" name="in-date" id="in-date" style="width: 98%;">
+                <br><br>
+                Check-out Date:<br>
+                <input type="date" name="out-date" id="out-date" style="width: 98%;">
+                <br><br>
+                Type of Room:<br>
+                <select name="room" id="room" style="width: 98%;">
+                    <option value="roomselect">Select Type of Room...</option>
+                    <option value="king">King</option>
+                    <option value="queen">Queen</option>
+                    <option value="double">Double</option>
+                    <option value="single">Single</option>
+                </select>
+                <br><br>
+                Number of Rooms:
+                <select name="#ofrooms" id="numberOfRooms" style="width: 98%;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                </div>
+                <div class="row">
+                    <h2>Guest information</h2>
+                    First name:<br>
+                    <input type="text" name="firstname" id="firstName" style="width: 98%;">
+                    <br><br>
+                    Last name:<br>
+                    <input type="text" name="lastname" id="lastName" style="width: 98%;">
+                    <br><br>
+                    Phone Number:<br>
+                    <input type="text" name="phone" id="phone" style="width: 98%;">
+                    <br><br>
+                    Email Address:<br>
+                    <input type="text" name="email" id="email" style="width: 98%;">
+                    <br><br>
+                    City: <br>
+                    <input type="text" name="city" id="city" style="width: 98%;">
+                    <br><br>
+                    State: <br>
+                    <input type="text" name="state" id="state" style="width: 98%;">
+                    <br><br>
+                    Country:<br>
+                    <input type="text" name="country" id="country" style="width: 98%;">
+                    <br><br>
+                </div>
+            </form>
+            <form action="/temple-inn/reservation-confirm.html">
+                <input type="submit" value="Submit" onclick="store()" id="submitButton">
+            </form>
+
+
+
+    </main>
+    <footer>
+        © 2019 | Shane Duke | <a href="/temple-inn/attributions.html">Attributions</a> |<a
+            href="/temple-inn/contact.html">Contact Us</a> |
+        <div class="dateMod"><span id="todaysDate"></span>
+            <script src="/temple-inn/js/functions.js"></script>
+        </div>
+
+
+    </footer>
+</body>
+
+
+</html>

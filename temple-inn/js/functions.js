@@ -41,11 +41,10 @@ var pageNav = document.querySelector('#page-nav');
 var storage = window.sessionStorage;
 
 function store() {
-    console.log("Im being read");
     storage.setItem("Temple: ", document.querySelector('#temples').value);
-    storage.setItem("Check in Date: ", document.querySelector('#check-in-date').value);
-    storage.setItem("Check out Date: ", document.querySelector('#check-out-date').value);
-    storage.setItem("Room Style: ", document.querySelector('#roomStyle').value);
+    storage.setItem("Check in Date: ", document.querySelector('#in-date').value);
+    storage.setItem("Check out Date: ", document.querySelector('#out-date').value);
+    storage.setItem("Room Style: ", document.querySelector('#room').value);
     storage.setItem("Number of Rooms: ", document.querySelector('#numberOfRooms').value);
     storage.setItem("firstName", document.querySelector('#firstName').value);
     storage.setItem("Last Name: ", document.querySelector('#lastName').value);
@@ -54,9 +53,18 @@ function store() {
     storage.setItem("City: ", document.querySelector('#city').value);
     storage.setItem("State: ", document.querySelector('#state').value);
     storage.setItem("Country: ", document.querySelector('#country').value);
-    storage.setItem("Comments: ", document.querySelector('#comments').value);
 }
 
+display()
+function display() {
+    document.querySelector('#fullName').innerHTML = "Full Name: " + storage.getItem('firstName') + " " + storage.getItem('Last Name: ');
+    document.querySelector('#temple').innerHTML = "Chosen Temple: " + storage.getItem('Temple: ');
+    document.querySelector('#dayin').innerHTML = "Arriving: " + storage.getItem('Check in Date: ')
+    document.querySelector('#dayout').innerHTML = "Departing: " + storage.getItem('Check out Date: ')
+    document.querySelector('#roomStyle').innerHTML = "Type of Room: " + storage.getItem('Room Style: ');
+    document.querySelector('#numberOfRooms').innerHTML = "Number of Rooms: " + storage.getItem('Number of Rooms: ');
+
+}
 
 function storeContact() {
     console.log("Im being read");

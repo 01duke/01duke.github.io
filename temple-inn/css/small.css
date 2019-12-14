@@ -38,7 +38,6 @@ nav ul li a {
     color: #37206e;
     text-align: center;
     padding: .3em;
-    list-style-type: none;
 
 
 }
@@ -49,7 +48,10 @@ li a:hover {
     border-radius: 30px;
 
 }
+nav ul li{
+    list-style-type: none;
 
+}
 li {
     margin: 0;
 }
@@ -61,8 +63,9 @@ ul {
 }
 
 #idaho-falls {
-    min-width: 300px;
+    min-width: 250px;
     width: 100%;
+
 }
 
 #boise {
@@ -99,8 +102,8 @@ h1 {
 }
 
 #map {
-    width: 400px;
-    height: 320px;
+ min-width: 300px;
+    width: 100%;
 }
 
 form {
